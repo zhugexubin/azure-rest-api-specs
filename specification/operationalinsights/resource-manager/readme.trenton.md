@@ -9,7 +9,7 @@ trenton:
     package-name: operationalinsights
 clear-output-folder: true
 output-folder: $(trenton-output-folder)/operationalinsights
-resources: DataExports,Workspaces
+resources: Workspaces
 ```
 
 ``` yaml $(tag) == 'package-2015-03' && $(trenton)
