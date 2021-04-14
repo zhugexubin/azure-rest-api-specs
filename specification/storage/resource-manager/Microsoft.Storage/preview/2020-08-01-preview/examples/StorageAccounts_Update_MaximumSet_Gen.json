@@ -18,14 +18,14 @@
           "bypass": "AzureServices",
           "virtualNetworkRules": [
             {
-              "id": "aaaaaaaaaa",
+              "id": "aaaaaaaaaaaaa",
               "action": "Allow",
               "state": "provisioning"
             }
           ],
           "ipRules": [
             {
-              "value": "aaaaaaaaaaaa",
+              "value": "aaaa",
               "action": "Allow"
             }
           ]
@@ -57,25 +57,25 @@
           "keySource": "Microsoft.Storage",
           "requireInfrastructureEncryption": true,
           "keyvaultproperties": {
-            "keyname": "aaaaaaaaaaaaaaaaaaaaaaaaa",
-            "keyversion": "aaaaaaaaaaaaaa",
-            "keyvaulturi": "aa"
+            "keyname": "aaaaaaaaaaaaaaaaaa",
+            "keyversion": "aaaaaaaa",
+            "keyvaulturi": "aaaaaaaaaaaaaaaaaaaaaaa"
           }
         },
         "customDomain": {
-          "name": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "name": "aaaaaaaaaaa",
           "useSubDomainName": true
         },
         "accessTier": "Hot",
         "azureFilesIdentityBasedAuthentication": {
           "directoryServiceOptions": "None",
           "activeDirectoryProperties": {
-            "domainName": "aaaaaaaaa",
-            "netBiosDomainName": "aaaa",
-            "forestName": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-            "domainGuid": "aaaaaa",
-            "domainSid": "aaaaaa",
-            "azureStorageSid": "aaaaaaaaaaaaaaaaaaaaaaaaaa"
+            "domainName": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "netBiosDomainName": "aaa",
+            "forestName": "a",
+            "domainGuid": "aaaaaaaaa",
+            "domainSid": "a",
+            "azureStorageSid": "aaaaaaaaaaaaa"
           }
         },
         "supportsHttpsTrafficOnly": true,
@@ -85,7 +85,7 @@
         "name": "Standard_LRS"
       },
       "tags": {
-        "key1063": "aaaaaaaaaaaaaaaaaaaaaaa"
+        "key5622": "aaaa"
       },
       "identity": {
         "type": "SystemAssigned"
@@ -155,66 +155,66 @@
               },
               "table": {
                 "enabled": true,
-                "lastEnabledTime": "2021-04-14T12:50:15.249Z",
+                "lastEnabledTime": "2021-04-14T12:57:02.190Z",
                 "keyType": "Service"
               },
               "queue": {
                 "enabled": true,
-                "lastEnabledTime": "2021-04-14T12:50:15.249Z",
+                "lastEnabledTime": "2021-04-14T12:57:02.190Z",
                 "keyType": "Service"
               }
             },
             "requireInfrastructureEncryption": true,
             "keySource": "Microsoft.Storage",
             "keyvaultproperties": {
-              "keyname": "aaaaaaaaaaaaaaaaaaaaaaaaa",
-              "keyversion": "aaaaaaaaaaaaaa",
-              "keyvaulturi": "aa",
-              "currentVersionedKeyIdentifier": "aaaaaaaaaaaaaaaaa",
-              "lastKeyRotationTimestamp": "2021-04-14T12:50:15.249Z"
+              "keyname": "aaaaaaaaaaaaaaaaaa",
+              "keyversion": "aaaaaaaa",
+              "keyvaulturi": "aaaaaaaaaaaaaaaaaaaaaaa",
+              "currentVersionedKeyIdentifier": "aaaaaaaaa",
+              "lastKeyRotationTimestamp": "2021-04-14T12:57:02.190Z"
             }
           },
           "secondaryLocation": "centraluseuap",
           "statusOfPrimary": "available",
           "statusOfSecondary": "available",
           "supportsHttpsTrafficOnly": true,
-          "lastGeoFailoverTime": "2021-04-14T12:50:15.250Z",
+          "lastGeoFailoverTime": "2021-04-14T12:57:02.191Z",
           "customDomain": {
-            "name": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "name": "aaaaaaaaaaa",
             "useSubDomainName": true
           },
           "secondaryEndpoints": {
-            "blob": "aa",
-            "queue": "aaaaaaaaaaaaaaaaaaaa",
-            "table": "aaaaaaaaaaaaaaaaaaa",
-            "file": "aaaaaaaaaaa",
-            "web": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-            "dfs": "aaaaaaaaaaaaaaaaaaaaa",
+            "blob": "aaaaaaaaaaaaaaaaa",
+            "queue": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "table": "aaaaaaaaaaaaaaaaa",
+            "file": "aaaaaaaaa",
+            "web": "aaaaaaaaaaaaaaaaaaaaaaaa",
+            "dfs": "aaaaa",
             "microsoftEndpoints": {
-              "blob": "aaaaaaaaaaaaaaaaaaaa",
+              "blob": "aaaaaaaaaa",
               "queue": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-              "table": "aaaaaaaaaa",
-              "file": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-              "web": "aaaaaaaaaaaaaaaaaaa",
-              "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaa"
+              "table": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "file": "aaaaaaaaaa",
+              "web": "aa",
+              "dfs": "aa"
             },
             "internetEndpoints": {
-              "blob": "aaaaaa",
+              "blob": "aaaaaaaaaaaaaaa",
               "file": "aaaaaa",
-              "web": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-              "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+              "web": "aaaaaaa",
+              "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
             }
           },
           "accessTier": "Hot",
           "azureFilesIdentityBasedAuthentication": {
             "directoryServiceOptions": "None",
             "activeDirectoryProperties": {
-              "domainName": "aaaaaaaaa",
-              "netBiosDomainName": "aaaa",
-              "forestName": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-              "domainGuid": "aaaaaa",
-              "domainSid": "aaaaaa",
-              "azureStorageSid": "aaaaaaaaaaaaaaaaaaaaaaaaaa"
+              "domainName": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "netBiosDomainName": "aaa",
+              "forestName": "a",
+              "domainGuid": "aaaaaaaaa",
+              "domainSid": "a",
+              "azureStorageSid": "aaaaaaaaaaaaa"
             }
           },
           "networkAcls": {
@@ -227,14 +227,14 @@
             ],
             "virtualNetworkRules": [
               {
-                "id": "aaaaaaaaaa",
+                "id": "aaaaaaaaaaaaa",
                 "action": "Allow",
                 "state": "provisioning"
               }
             ],
             "ipRules": [
               {
-                "value": "aaaaaaaaaaaa",
+                "value": "aaaa",
                 "action": "Allow"
               }
             ],
@@ -242,7 +242,7 @@
           },
           "geoReplicationStats": {
             "status": "Live",
-            "lastSyncTime": "2021-04-14T12:50:15.251Z",
+            "lastSyncTime": "2021-04-14T12:57:02.191Z",
             "canFailover": true
           },
           "failoverInProgress": true,
@@ -255,26 +255,26 @@
                 },
                 "privateLinkServiceConnectionState": {
                   "status": "Pending",
-                  "description": "aaaaaaaaaaaaaaaaaa",
-                  "actionRequired": "aaaaaaaaaaaaaaaaaaaaaaa"
+                  "description": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                  "actionRequired": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                 },
                 "provisioningState": "Succeeded"
               },
-              "id": "aaaaaaa",
-              "name": "a",
-              "type": "aaaaaaaaaaaaaaaaaaa"
+              "id": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "name": "aaaaaaaaaaaaaa",
+              "type": "aaaaaaaaaaaaaaaaa"
             }
           ],
           "blobRestoreStatus": {
             "status": "InProgress",
-            "failureReason": "aaaaaaaaaaaaaaaaaa",
-            "restoreId": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "failureReason": "aaaaaaaaaaaaaaaaaaa",
+            "restoreId": "aaaaaaaaaaa",
             "parameters": {
-              "timeToRestore": "2021-04-14T12:50:15.251Z",
+              "timeToRestore": "2021-04-14T12:57:02.191Z",
               "blobRanges": [
                 {
-                  "startRange": "aaaaaaaa",
-                  "endRange": "aaaaaaaaaaaaaaaaaaaaaaa"
+                  "startRange": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                  "endRange": "aaaaaaaaaaaaaaaaaaaaaaaa"
                 }
               ]
             }
@@ -287,8 +287,8 @@
         "tags": {},
         "type": "Microsoft.Storage/storageAccounts",
         "identity": {
-          "principalId": "aaaaaaa",
-          "tenantId": "aaaaaaaaaaaaaaaaaaaaaaaaa",
+          "principalId": "aaaaaa",
+          "tenantId": "aaaaaaaa",
           "type": "SystemAssigned"
         }
       }
