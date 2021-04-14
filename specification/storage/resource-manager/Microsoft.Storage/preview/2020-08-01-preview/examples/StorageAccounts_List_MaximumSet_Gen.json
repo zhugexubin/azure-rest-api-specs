@@ -58,86 +58,86 @@
                   },
                   "table": {
                     "enabled": true,
-                    "lastEnabledTime": "2021-04-14T23:12:11.751Z",
+                    "lastEnabledTime": "2021-04-14T23:21:45.890Z",
                     "keyType": "Service"
                   },
                   "queue": {
                     "enabled": true,
-                    "lastEnabledTime": "2021-04-14T23:12:11.751Z",
+                    "lastEnabledTime": "2021-04-14T23:21:45.890Z",
                     "keyType": "Service"
                   }
                 },
                 "keySource": "Microsoft.Storage",
                 "requireInfrastructureEncryption": true,
                 "keyvaultproperties": {
-                  "keyname": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "keyversion": "aaaaaaaaaaa",
-                  "keyvaulturi": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "currentVersionedKeyIdentifier": "aaaaaaaaaaaaaaaaaaaa",
-                  "lastKeyRotationTimestamp": "2021-04-14T23:12:11.751Z"
+                  "keyname": "aaaaaaaaaa",
+                  "keyversion": "aa",
+                  "keyvaulturi": "aaaaaaaaaaaa",
+                  "currentVersionedKeyIdentifier": "aaaaaaaaaaa",
+                  "lastKeyRotationTimestamp": "2021-04-14T23:21:45.891Z"
                 }
               },
               "secondaryLocation": "centraluseuap",
               "statusOfPrimary": "available",
               "statusOfSecondary": "available",
               "supportsHttpsTrafficOnly": true,
-              "lastGeoFailoverTime": "2021-04-14T23:12:11.757Z",
+              "lastGeoFailoverTime": "2021-04-14T23:21:45.901Z",
               "customDomain": {
-                "name": "aaaaaaaaa",
+                "name": "aaaaaaaaaaaaaaaaa",
                 "useSubDomainName": true
               },
               "secondaryEndpoints": {
-                "blob": "aaaaaaaaaa",
-                "queue": "aaaaaaaaaaaaaaaa",
+                "blob": "aaaaaaaaaaaaaaaaaaa",
+                "queue": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "table": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "file": "aaaaaaaaaaaa",
-                "web": "aaaaaaaaaaa",
-                "dfs": "aaaaaaaaaaaaaa",
+                "file": "aaaaaaaaaa",
+                "web": "aaaaaaaaaaaaaaaa",
+                "dfs": "aaaaaaa",
                 "microsoftEndpoints": {
-                  "blob": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "queue": "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "table": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "file": "aaaaaaaaaaaaaa",
-                  "web": "aaaaaa",
-                  "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                  "blob": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
+                  "queue": "aaaaaaaaaaaaaaaaaaa",
+                  "table": "aaaaaaaaaaaaaaaaaaa",
+                  "file": "aaaaaa",
+                  "web": "a",
+                  "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaaa"
                 },
                 "internetEndpoints": {
-                  "blob": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "file": "aaaaaaaaaaaaaaaaaaaa",
-                  "web": "aaa",
-                  "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaa"
+                  "blob": "aaaaaaaaaaaaaa",
+                  "file": "aaaaaaaaaaaaaaaaaaaaaaaa",
+                  "web": "aaaaaa",
+                  "dfs": "aaaaa"
                 }
               },
               "accessTier": "Hot",
               "azureFilesIdentityBasedAuthentication": {
                 "directoryServiceOptions": "None",
                 "activeDirectoryProperties": {
-                  "domainName": "aaaaaaaaaaaa",
-                  "netBiosDomainName": "aa",
-                  "forestName": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "domainGuid": "aaaaaaaaaaaaaaaaa",
-                  "domainSid": "aaaaaaaaaaaaaaaaa",
-                  "azureStorageSid": "aaa"
+                  "domainName": "aaa",
+                  "netBiosDomainName": "aaaaaaaaaaaaaaaaaaaaa",
+                  "forestName": "aaaaaaaa",
+                  "domainGuid": "aaaaaaaaaaaaaaaa",
+                  "domainSid": "aaaaaaaaaaaaaaaaaaaaa",
+                  "azureStorageSid": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                 }
               },
               "networkAcls": {
                 "bypass": "None",
                 "resourceAccessRules": [
                   {
-                    "tenantId": "aaaaaaaaaaaaaaaaaaa",
-                    "resourceId": "aaaaaaaaaaaaaa"
+                    "tenantId": "aaaaaaaaaaaaaaaaaaaaaaaa",
+                    "resourceId": "aaaaaaaaaaaaaaaaaa"
                   }
                 ],
                 "virtualNetworkRules": [
                   {
-                    "id": "aaaaaaaa",
+                    "id": "aaaaaaaaaaaaaaaaaaaaa",
                     "action": "Allow",
                     "state": "provisioning"
                   }
                 ],
                 "ipRules": [
                   {
-                    "value": "aaaaaaaaaaaaaaa",
+                    "value": "aaaaa",
                     "action": "Allow"
                   }
                 ],
@@ -145,7 +145,7 @@
               },
               "geoReplicationStats": {
                 "status": "Live",
-                "lastSyncTime": "2021-04-14T23:12:11.752Z",
+                "lastSyncTime": "2021-04-14T23:21:45.892Z",
                 "canFailover": true
               },
               "failoverInProgress": true,
@@ -158,26 +158,26 @@
                     },
                     "privateLinkServiceConnectionState": {
                       "status": "Pending",
-                      "description": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                      "actionRequired": "aaaaaaaaaaaaaaaaaa"
+                      "description": "aa",
+                      "actionRequired": "aaa"
                     },
                     "provisioningState": "Succeeded"
                   },
-                  "id": "aaaaaaaaaaaaaaa",
-                  "name": "aaaaaaaaaaaaa",
-                  "type": "aaaaaaaaaaa"
+                  "id": "aaaaaaaaaaaaaa",
+                  "name": "aaaaaaaaaaaaaaaaaa",
+                  "type": "aaaaaaaaaaaaaaaaaaaa"
                 }
               ],
               "blobRestoreStatus": {
                 "status": "InProgress",
-                "failureReason": "aaaaaaaaaaaaaaaaaaaaaaa",
-                "restoreId": "aaaaa",
+                "failureReason": "aaaaaaaa",
+                "restoreId": "aaaaaaaaaa",
                 "parameters": {
-                  "timeToRestore": "2021-04-14T23:12:11.752Z",
+                  "timeToRestore": "2021-04-14T23:21:45.892Z",
                   "blobRanges": [
                     {
-                      "startRange": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                      "endRange": "aaaaaaaaaa"
+                      "startRange": "aaaaaa",
+                      "endRange": "aaaaaaaaaaaaaaaaaaaaa"
                     }
                   ]
                 }
@@ -193,12 +193,12 @@
             "tags": {},
             "type": "Microsoft.Storage/storageAccounts",
             "identity": {
-              "principalId": "a",
-              "tenantId": "aaaaa",
+              "principalId": "aaaaaaaaaaaaaaaaaaaaaaaaa",
+              "tenantId": "aaaaaaaa",
               "type": "SystemAssigned"
             },
             "extendedLocation": {
-              "name": "aaaaaaaaaaaaa",
+              "name": "aaa",
               "type": "EdgeZone"
             }
           },
@@ -219,21 +219,21 @@
                 "file": "https://sto3699.file.core.windows.net/",
                 "queue": "https://sto3699.queue.core.windows.net/",
                 "table": "https://sto3699.table.core.windows.net/",
-                "web": "aaaaaaaaaaaaaaaaaa",
-                "dfs": "aaaaaaaaa",
+                "web": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "dfs": "aa",
                 "microsoftEndpoints": {
-                  "blob": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "queue": "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "table": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "file": "aaaaaaaaaaaaaa",
-                  "web": "aaaaaa",
-                  "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                  "blob": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
+                  "queue": "aaaaaaaaaaaaaaaaaaa",
+                  "table": "aaaaaaaaaaaaaaaaaaa",
+                  "file": "aaaaaa",
+                  "web": "a",
+                  "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaaa"
                 },
                 "internetEndpoints": {
-                  "blob": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "file": "aaaaaaaaaaaaaaaaaaaa",
-                  "web": "aaa",
-                  "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaa"
+                  "blob": "aaaaaaaaaaaaaa",
+                  "file": "aaaaaaaaaaaaaaaaaaaaaaaa",
+                  "web": "aaaaaa",
+                  "dfs": "aaaaa"
                 }
               },
               "primaryLocation": "eastus",
@@ -242,96 +242,96 @@
               "statusOfPrimary": "available",
               "statusOfSecondary": "available",
               "supportsHttpsTrafficOnly": true,
-              "lastGeoFailoverTime": "2021-04-14T23:12:11.758Z",
+              "lastGeoFailoverTime": "2021-04-14T23:21:45.901Z",
               "customDomain": {
-                "name": "aaaaaaaaa",
+                "name": "aaaaaaaaaaaaaaaaa",
                 "useSubDomainName": true
               },
               "secondaryEndpoints": {
-                "blob": "aaaaaaaaaa",
-                "queue": "aaaaaaaaaaaaaaaa",
+                "blob": "aaaaaaaaaaaaaaaaaaa",
+                "queue": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "table": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "file": "aaaaaaaaaaaa",
-                "web": "aaaaaaaaaaa",
-                "dfs": "aaaaaaaaaaaaaa",
+                "file": "aaaaaaaaaa",
+                "web": "aaaaaaaaaaaaaaaa",
+                "dfs": "aaaaaaa",
                 "microsoftEndpoints": {
-                  "blob": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "queue": "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "table": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "file": "aaaaaaaaaaaaaa",
-                  "web": "aaaaaa",
-                  "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                  "blob": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
+                  "queue": "aaaaaaaaaaaaaaaaaaa",
+                  "table": "aaaaaaaaaaaaaaaaaaa",
+                  "file": "aaaaaa",
+                  "web": "a",
+                  "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaaa"
                 },
                 "internetEndpoints": {
-                  "blob": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "file": "aaaaaaaaaaaaaaaaaaaa",
-                  "web": "aaa",
-                  "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaa"
+                  "blob": "aaaaaaaaaaaaaa",
+                  "file": "aaaaaaaaaaaaaaaaaaaaaaaa",
+                  "web": "aaaaaa",
+                  "dfs": "aaaaa"
                 }
               },
               "encryption": {
                 "services": {
                   "blob": {
                     "enabled": true,
-                    "lastEnabledTime": "2021-04-14T23:12:11.751Z",
+                    "lastEnabledTime": "2021-04-14T23:21:45.890Z",
                     "keyType": "Service"
                   },
                   "file": {
                     "enabled": true,
-                    "lastEnabledTime": "2021-04-14T23:12:11.751Z",
+                    "lastEnabledTime": "2021-04-14T23:21:45.890Z",
                     "keyType": "Service"
                   },
                   "table": {
                     "enabled": true,
-                    "lastEnabledTime": "2021-04-14T23:12:11.751Z",
+                    "lastEnabledTime": "2021-04-14T23:21:45.890Z",
                     "keyType": "Service"
                   },
                   "queue": {
                     "enabled": true,
-                    "lastEnabledTime": "2021-04-14T23:12:11.751Z",
+                    "lastEnabledTime": "2021-04-14T23:21:45.890Z",
                     "keyType": "Service"
                   }
                 },
                 "keySource": "Microsoft.Storage",
                 "requireInfrastructureEncryption": true,
                 "keyvaultproperties": {
-                  "keyname": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "keyversion": "aaaaaaaaaaa",
-                  "keyvaulturi": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "currentVersionedKeyIdentifier": "aaaaaaaaaaaaaaaaaaaa",
-                  "lastKeyRotationTimestamp": "2021-04-14T23:12:11.751Z"
+                  "keyname": "aaaaaaaaaa",
+                  "keyversion": "aa",
+                  "keyvaulturi": "aaaaaaaaaaaa",
+                  "currentVersionedKeyIdentifier": "aaaaaaaaaaa",
+                  "lastKeyRotationTimestamp": "2021-04-14T23:21:45.891Z"
                 }
               },
               "accessTier": "Hot",
               "azureFilesIdentityBasedAuthentication": {
                 "directoryServiceOptions": "None",
                 "activeDirectoryProperties": {
-                  "domainName": "aaaaaaaaaaaa",
-                  "netBiosDomainName": "aa",
-                  "forestName": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "domainGuid": "aaaaaaaaaaaaaaaaa",
-                  "domainSid": "aaaaaaaaaaaaaaaaa",
-                  "azureStorageSid": "aaa"
+                  "domainName": "aaa",
+                  "netBiosDomainName": "aaaaaaaaaaaaaaaaaaaaa",
+                  "forestName": "aaaaaaaa",
+                  "domainGuid": "aaaaaaaaaaaaaaaa",
+                  "domainSid": "aaaaaaaaaaaaaaaaaaaaa",
+                  "azureStorageSid": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                 }
               },
               "networkAcls": {
                 "bypass": "None",
                 "resourceAccessRules": [
                   {
-                    "tenantId": "aaaaaaaaaaaaaaaaaaa",
-                    "resourceId": "aaaaaaaaaaaaaa"
+                    "tenantId": "aaaaaaaaaaaaaaaaaaaaaaaa",
+                    "resourceId": "aaaaaaaaaaaaaaaaaa"
                   }
                 ],
                 "virtualNetworkRules": [
                   {
-                    "id": "aaaaaaaa",
+                    "id": "aaaaaaaaaaaaaaaaaaaaa",
                     "action": "Allow",
                     "state": "provisioning"
                   }
                 ],
                 "ipRules": [
                   {
-                    "value": "aaaaaaaaaaaaaaa",
+                    "value": "aaaaa",
                     "action": "Allow"
                   }
                 ],
@@ -340,7 +340,7 @@
               "isHnsEnabled": true,
               "geoReplicationStats": {
                 "status": "Live",
-                "lastSyncTime": "2021-04-14T23:12:11.752Z",
+                "lastSyncTime": "2021-04-14T23:21:45.892Z",
                 "canFailover": true
               },
               "failoverInProgress": true,
@@ -353,14 +353,14 @@
                     },
                     "privateLinkServiceConnectionState": {
                       "status": "Pending",
-                      "description": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                      "actionRequired": "aaaaaaaaaaaaaaaaaa"
+                      "description": "aa",
+                      "actionRequired": "aaa"
                     },
                     "provisioningState": "Succeeded"
                   },
-                  "id": "aaaaaaaaaaaaaaa",
-                  "name": "aaaaaaaaaaaaa",
-                  "type": "aaaaaaaaaaa"
+                  "id": "aaaaaaaaaaaaaa",
+                  "name": "aaaaaaaaaaaaaaaaaa",
+                  "type": "aaaaaaaaaaaaaaaaaaaa"
                 }
               ],
               "routingPreference": {
@@ -370,14 +370,14 @@
               },
               "blobRestoreStatus": {
                 "status": "InProgress",
-                "failureReason": "aaaaaaaaaaaaaaaaaaaaaaa",
-                "restoreId": "aaaaa",
+                "failureReason": "aaaaaaaa",
+                "restoreId": "aaaaaaaaaa",
                 "parameters": {
-                  "timeToRestore": "2021-04-14T23:12:11.752Z",
+                  "timeToRestore": "2021-04-14T23:21:45.892Z",
                   "blobRanges": [
                     {
-                      "startRange": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                      "endRange": "aaaaaaaaaa"
+                      "startRange": "aaaaaa",
+                      "endRange": "aaaaaaaaaaaaaaaaaaaaa"
                     }
                   ]
                 }
@@ -393,7 +393,7 @@
             "tags": {},
             "type": "Microsoft.Storage/storageAccounts",
             "extendedLocation": {
-              "name": "aaaaaaaaaaaaa",
+              "name": "aaa",
               "type": "EdgeZone"
             }
           },
@@ -470,12 +470,12 @@
                   },
                   "table": {
                     "enabled": true,
-                    "lastEnabledTime": "2021-04-14T23:12:11.751Z",
+                    "lastEnabledTime": "2021-04-14T23:21:45.890Z",
                     "keyType": "Service"
                   },
                   "queue": {
                     "enabled": true,
-                    "lastEnabledTime": "2021-04-14T23:12:11.751Z",
+                    "lastEnabledTime": "2021-04-14T23:21:45.890Z",
                     "keyType": "Service"
                   }
                 },
@@ -483,7 +483,7 @@
                 "keyvaultproperties": {
                   "keyvaulturi": "https://myvault8569.vault.azure.net",
                   "keyname": "wrappingKey",
-                  "keyversion": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                  "keyversion": "aaaaaaaaaaaaaaaaaaaaaa",
                   "currentVersionedKeyIdentifier": "https://myvault8569.vault.azure.net/keys/wrappingKey/0682afdd9c104f4285df20107e956cad",
                   "lastKeyRotationTimestamp": "2019-12-13T20:36:23.7023290Z"
                 },
@@ -493,43 +493,43 @@
               "statusOfPrimary": "available",
               "statusOfSecondary": "available",
               "supportsHttpsTrafficOnly": true,
-              "lastGeoFailoverTime": "2021-04-14T23:12:11.758Z",
+              "lastGeoFailoverTime": "2021-04-14T23:21:45.902Z",
               "customDomain": {
-                "name": "aaaaaaaaa",
+                "name": "aaaaaaaaaaaaaaaaa",
                 "useSubDomainName": true
               },
               "secondaryEndpoints": {
-                "blob": "aaaaaaaaaa",
-                "queue": "aaaaaaaaaaaaaaaa",
+                "blob": "aaaaaaaaaaaaaaaaaaa",
+                "queue": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "table": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "file": "aaaaaaaaaaaa",
-                "web": "aaaaaaaaaaa",
-                "dfs": "aaaaaaaaaaaaaa",
+                "file": "aaaaaaaaaa",
+                "web": "aaaaaaaaaaaaaaaa",
+                "dfs": "aaaaaaa",
                 "microsoftEndpoints": {
-                  "blob": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "queue": "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "table": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "file": "aaaaaaaaaaaaaa",
-                  "web": "aaaaaa",
-                  "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                  "blob": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
+                  "queue": "aaaaaaaaaaaaaaaaaaa",
+                  "table": "aaaaaaaaaaaaaaaaaaa",
+                  "file": "aaaaaa",
+                  "web": "a",
+                  "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaaa"
                 },
                 "internetEndpoints": {
-                  "blob": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "file": "aaaaaaaaaaaaaaaaaaaa",
-                  "web": "aaa",
-                  "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaa"
+                  "blob": "aaaaaaaaaaaaaa",
+                  "file": "aaaaaaaaaaaaaaaaaaaaaaaa",
+                  "web": "aaaaaa",
+                  "dfs": "aaaaa"
                 }
               },
               "accessTier": "Hot",
               "azureFilesIdentityBasedAuthentication": {
                 "directoryServiceOptions": "None",
                 "activeDirectoryProperties": {
-                  "domainName": "aaaaaaaaaaaa",
-                  "netBiosDomainName": "aa",
-                  "forestName": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "domainGuid": "aaaaaaaaaaaaaaaaa",
-                  "domainSid": "aaaaaaaaaaaaaaaaa",
-                  "azureStorageSid": "aaa"
+                  "domainName": "aaa",
+                  "netBiosDomainName": "aaaaaaaaaaaaaaaaaaaaa",
+                  "forestName": "aaaaaaaa",
+                  "domainGuid": "aaaaaaaaaaaaaaaa",
+                  "domainSid": "aaaaaaaaaaaaaaaaaaaaa",
+                  "azureStorageSid": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                 }
               },
               "failoverInProgress": true,
@@ -542,26 +542,26 @@
                     },
                     "privateLinkServiceConnectionState": {
                       "status": "Pending",
-                      "description": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                      "actionRequired": "aaaaaaaaaaaaaaaaaa"
+                      "description": "aa",
+                      "actionRequired": "aaa"
                     },
                     "provisioningState": "Succeeded"
                   },
-                  "id": "aaaaaaaaaaaaaaa",
-                  "name": "aaaaaaaaaaaaa",
-                  "type": "aaaaaaaaaaa"
+                  "id": "aaaaaaaaaaaaaa",
+                  "name": "aaaaaaaaaaaaaaaaaa",
+                  "type": "aaaaaaaaaaaaaaaaaaaa"
                 }
               ],
               "blobRestoreStatus": {
                 "status": "InProgress",
-                "failureReason": "aaaaaaaaaaaaaaaaaaaaaaa",
-                "restoreId": "aaaaa",
+                "failureReason": "aaaaaaaa",
+                "restoreId": "aaaaaaaaaa",
                 "parameters": {
-                  "timeToRestore": "2021-04-14T23:12:11.752Z",
+                  "timeToRestore": "2021-04-14T23:21:45.892Z",
                   "blobRanges": [
                     {
-                      "startRange": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                      "endRange": "aaaaaaaaaa"
+                      "startRange": "aaaaaa",
+                      "endRange": "aaaaaaaaaaaaaaaaaaaaa"
                     }
                   ]
                 }
@@ -577,7 +577,7 @@
             "tags": {},
             "type": "Microsoft.Storage/storageAccounts",
             "extendedLocation": {
-              "name": "aaaaaaaaaaaaa",
+              "name": "aaa",
               "type": "EdgeZone"
             }
           },
@@ -598,21 +598,21 @@
                 "file": "https://sto6637.file.core.windows.net/",
                 "queue": "https://sto6637.queue.core.windows.net/",
                 "table": "https://sto6637.table.core.windows.net/",
-                "web": "aaaaaaaaaaaaaaaaaaaaaaaa",
-                "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "web": "aaa",
+                "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "microsoftEndpoints": {
-                  "blob": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "queue": "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "table": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "file": "aaaaaaaaaaaaaa",
-                  "web": "aaaaaa",
-                  "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                  "blob": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
+                  "queue": "aaaaaaaaaaaaaaaaaaa",
+                  "table": "aaaaaaaaaaaaaaaaaaa",
+                  "file": "aaaaaa",
+                  "web": "a",
+                  "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaaa"
                 },
                 "internetEndpoints": {
-                  "blob": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "file": "aaaaaaaaaaaaaaaaaaaa",
-                  "web": "aaa",
-                  "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaa"
+                  "blob": "aaaaaaaaaaaaaa",
+                  "file": "aaaaaaaaaaaaaaaaaaaaaaaa",
+                  "web": "aaaaaa",
+                  "dfs": "aaaaa"
                 }
               },
               "primaryLocation": "eastus",
@@ -621,96 +621,96 @@
               "statusOfPrimary": "available",
               "statusOfSecondary": "available",
               "supportsHttpsTrafficOnly": true,
-              "lastGeoFailoverTime": "2021-04-14T23:12:11.758Z",
+              "lastGeoFailoverTime": "2021-04-14T23:21:45.902Z",
               "customDomain": {
-                "name": "aaaaaaaaa",
+                "name": "aaaaaaaaaaaaaaaaa",
                 "useSubDomainName": true
               },
               "secondaryEndpoints": {
-                "blob": "aaaaaaaaaa",
-                "queue": "aaaaaaaaaaaaaaaa",
+                "blob": "aaaaaaaaaaaaaaaaaaa",
+                "queue": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "table": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "file": "aaaaaaaaaaaa",
-                "web": "aaaaaaaaaaa",
-                "dfs": "aaaaaaaaaaaaaa",
+                "file": "aaaaaaaaaa",
+                "web": "aaaaaaaaaaaaaaaa",
+                "dfs": "aaaaaaa",
                 "microsoftEndpoints": {
-                  "blob": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "queue": "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "table": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "file": "aaaaaaaaaaaaaa",
-                  "web": "aaaaaa",
-                  "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                  "blob": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
+                  "queue": "aaaaaaaaaaaaaaaaaaa",
+                  "table": "aaaaaaaaaaaaaaaaaaa",
+                  "file": "aaaaaa",
+                  "web": "a",
+                  "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaaa"
                 },
                 "internetEndpoints": {
-                  "blob": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "file": "aaaaaaaaaaaaaaaaaaaa",
-                  "web": "aaa",
-                  "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaa"
+                  "blob": "aaaaaaaaaaaaaa",
+                  "file": "aaaaaaaaaaaaaaaaaaaaaaaa",
+                  "web": "aaaaaa",
+                  "dfs": "aaaaa"
                 }
               },
               "encryption": {
                 "services": {
                   "blob": {
                     "enabled": true,
-                    "lastEnabledTime": "2021-04-14T23:12:11.751Z",
+                    "lastEnabledTime": "2021-04-14T23:21:45.890Z",
                     "keyType": "Service"
                   },
                   "file": {
                     "enabled": true,
-                    "lastEnabledTime": "2021-04-14T23:12:11.751Z",
+                    "lastEnabledTime": "2021-04-14T23:21:45.890Z",
                     "keyType": "Service"
                   },
                   "table": {
                     "enabled": true,
-                    "lastEnabledTime": "2021-04-14T23:12:11.751Z",
+                    "lastEnabledTime": "2021-04-14T23:21:45.890Z",
                     "keyType": "Service"
                   },
                   "queue": {
                     "enabled": true,
-                    "lastEnabledTime": "2021-04-14T23:12:11.751Z",
+                    "lastEnabledTime": "2021-04-14T23:21:45.890Z",
                     "keyType": "Service"
                   }
                 },
                 "keySource": "Microsoft.Storage",
                 "requireInfrastructureEncryption": true,
                 "keyvaultproperties": {
-                  "keyname": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "keyversion": "aaaaaaaaaaa",
-                  "keyvaulturi": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "currentVersionedKeyIdentifier": "aaaaaaaaaaaaaaaaaaaa",
-                  "lastKeyRotationTimestamp": "2021-04-14T23:12:11.751Z"
+                  "keyname": "aaaaaaaaaa",
+                  "keyversion": "aa",
+                  "keyvaulturi": "aaaaaaaaaaaa",
+                  "currentVersionedKeyIdentifier": "aaaaaaaaaaa",
+                  "lastKeyRotationTimestamp": "2021-04-14T23:21:45.891Z"
                 }
               },
               "accessTier": "Hot",
               "azureFilesIdentityBasedAuthentication": {
                 "directoryServiceOptions": "None",
                 "activeDirectoryProperties": {
-                  "domainName": "aaaaaaaaaaaa",
-                  "netBiosDomainName": "aa",
-                  "forestName": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "domainGuid": "aaaaaaaaaaaaaaaaa",
-                  "domainSid": "aaaaaaaaaaaaaaaaa",
-                  "azureStorageSid": "aaa"
+                  "domainName": "aaa",
+                  "netBiosDomainName": "aaaaaaaaaaaaaaaaaaaaa",
+                  "forestName": "aaaaaaaa",
+                  "domainGuid": "aaaaaaaaaaaaaaaa",
+                  "domainSid": "aaaaaaaaaaaaaaaaaaaaa",
+                  "azureStorageSid": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                 }
               },
               "networkAcls": {
                 "bypass": "None",
                 "resourceAccessRules": [
                   {
-                    "tenantId": "aaaaaaaaaaaaaaaaaaa",
-                    "resourceId": "aaaaaaaaaaaaaa"
+                    "tenantId": "aaaaaaaaaaaaaaaaaaaaaaaa",
+                    "resourceId": "aaaaaaaaaaaaaaaaaa"
                   }
                 ],
                 "virtualNetworkRules": [
                   {
-                    "id": "aaaaaaaa",
+                    "id": "aaaaaaaaaaaaaaaaaaaaa",
                     "action": "Allow",
                     "state": "provisioning"
                   }
                 ],
                 "ipRules": [
                   {
-                    "value": "aaaaaaaaaaaaaaa",
+                    "value": "aaaaa",
                     "action": "Allow"
                   }
                 ],
@@ -719,7 +719,7 @@
               "isHnsEnabled": true,
               "geoReplicationStats": {
                 "status": "Live",
-                "lastSyncTime": "2021-04-14T23:12:11.752Z",
+                "lastSyncTime": "2021-04-14T23:21:45.892Z",
                 "canFailover": true
               },
               "failoverInProgress": true,
@@ -732,14 +732,14 @@
                     },
                     "privateLinkServiceConnectionState": {
                       "status": "Pending",
-                      "description": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                      "actionRequired": "aaaaaaaaaaaaaaaaaa"
+                      "description": "aa",
+                      "actionRequired": "aaa"
                     },
                     "provisioningState": "Succeeded"
                   },
-                  "id": "aaaaaaaaaaaaaaa",
-                  "name": "aaaaaaaaaaaaa",
-                  "type": "aaaaaaaaaaa"
+                  "id": "aaaaaaaaaaaaaa",
+                  "name": "aaaaaaaaaaaaaaaaaa",
+                  "type": "aaaaaaaaaaaaaaaaaaaa"
                 }
               ],
               "routingPreference": {
@@ -749,14 +749,14 @@
               },
               "blobRestoreStatus": {
                 "status": "InProgress",
-                "failureReason": "aaaaaaaaaaaaaaaaaaaaaaa",
-                "restoreId": "aaaaa",
+                "failureReason": "aaaaaaaa",
+                "restoreId": "aaaaaaaaaa",
                 "parameters": {
-                  "timeToRestore": "2021-04-14T23:12:11.752Z",
+                  "timeToRestore": "2021-04-14T23:21:45.892Z",
                   "blobRanges": [
                     {
-                      "startRange": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                      "endRange": "aaaaaaaaaa"
+                      "startRange": "aaaaaa",
+                      "endRange": "aaaaaaaaaaaaaaaaaaaaa"
                     }
                   ]
                 }
@@ -772,7 +772,7 @@
             "tags": {},
             "type": "Microsoft.Storage/storageAccounts",
             "extendedLocation": {
-              "name": "aaaaaaaaaaaaa",
+              "name": "aaa",
               "type": "EdgeZone"
             }
           },
@@ -788,21 +788,21 @@
                 "file": "https://sto834.file.core.windows.net/",
                 "queue": "https://sto834.queue.core.windows.net/",
                 "table": "https://sto834.table.core.windows.net/",
-                "web": "aaa",
-                "dfs": "aaaaaaaaaa",
+                "web": "aaaaaaaaaaaaaaaaaaaaaaa",
+                "dfs": "a",
                 "microsoftEndpoints": {
-                  "blob": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "queue": "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "table": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "file": "aaaaaaaaaaaaaa",
-                  "web": "aaaaaa",
-                  "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                  "blob": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
+                  "queue": "aaaaaaaaaaaaaaaaaaa",
+                  "table": "aaaaaaaaaaaaaaaaaaa",
+                  "file": "aaaaaa",
+                  "web": "a",
+                  "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaaa"
                 },
                 "internetEndpoints": {
-                  "blob": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "file": "aaaaaaaaaaaaaaaaaaaa",
-                  "web": "aaa",
-                  "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaa"
+                  "blob": "aaaaaaaaaaaaaa",
+                  "file": "aaaaaaaaaaaaaaaaaaaaaaaa",
+                  "web": "aaaaaa",
+                  "dfs": "aaaaa"
                 }
               },
               "primaryLocation": "eastus",
@@ -811,96 +811,96 @@
               "statusOfPrimary": "available",
               "statusOfSecondary": "available",
               "supportsHttpsTrafficOnly": true,
-              "lastGeoFailoverTime": "2021-04-14T23:12:11.759Z",
+              "lastGeoFailoverTime": "2021-04-14T23:21:45.902Z",
               "customDomain": {
-                "name": "aaaaaaaaa",
+                "name": "aaaaaaaaaaaaaaaaa",
                 "useSubDomainName": true
               },
               "secondaryEndpoints": {
-                "blob": "aaaaaaaaaa",
-                "queue": "aaaaaaaaaaaaaaaa",
+                "blob": "aaaaaaaaaaaaaaaaaaa",
+                "queue": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "table": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "file": "aaaaaaaaaaaa",
-                "web": "aaaaaaaaaaa",
-                "dfs": "aaaaaaaaaaaaaa",
+                "file": "aaaaaaaaaa",
+                "web": "aaaaaaaaaaaaaaaa",
+                "dfs": "aaaaaaa",
                 "microsoftEndpoints": {
-                  "blob": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "queue": "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "table": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "file": "aaaaaaaaaaaaaa",
-                  "web": "aaaaaa",
-                  "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                  "blob": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
+                  "queue": "aaaaaaaaaaaaaaaaaaa",
+                  "table": "aaaaaaaaaaaaaaaaaaa",
+                  "file": "aaaaaa",
+                  "web": "a",
+                  "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaaa"
                 },
                 "internetEndpoints": {
-                  "blob": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "file": "aaaaaaaaaaaaaaaaaaaa",
-                  "web": "aaa",
-                  "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaa"
+                  "blob": "aaaaaaaaaaaaaa",
+                  "file": "aaaaaaaaaaaaaaaaaaaaaaaa",
+                  "web": "aaaaaa",
+                  "dfs": "aaaaa"
                 }
               },
               "encryption": {
                 "services": {
                   "blob": {
                     "enabled": true,
-                    "lastEnabledTime": "2021-04-14T23:12:11.751Z",
+                    "lastEnabledTime": "2021-04-14T23:21:45.890Z",
                     "keyType": "Service"
                   },
                   "file": {
                     "enabled": true,
-                    "lastEnabledTime": "2021-04-14T23:12:11.751Z",
+                    "lastEnabledTime": "2021-04-14T23:21:45.890Z",
                     "keyType": "Service"
                   },
                   "table": {
                     "enabled": true,
-                    "lastEnabledTime": "2021-04-14T23:12:11.751Z",
+                    "lastEnabledTime": "2021-04-14T23:21:45.890Z",
                     "keyType": "Service"
                   },
                   "queue": {
                     "enabled": true,
-                    "lastEnabledTime": "2021-04-14T23:12:11.751Z",
+                    "lastEnabledTime": "2021-04-14T23:21:45.890Z",
                     "keyType": "Service"
                   }
                 },
                 "keySource": "Microsoft.Storage",
                 "requireInfrastructureEncryption": true,
                 "keyvaultproperties": {
-                  "keyname": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "keyversion": "aaaaaaaaaaa",
-                  "keyvaulturi": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "currentVersionedKeyIdentifier": "aaaaaaaaaaaaaaaaaaaa",
-                  "lastKeyRotationTimestamp": "2021-04-14T23:12:11.751Z"
+                  "keyname": "aaaaaaaaaa",
+                  "keyversion": "aa",
+                  "keyvaulturi": "aaaaaaaaaaaa",
+                  "currentVersionedKeyIdentifier": "aaaaaaaaaaa",
+                  "lastKeyRotationTimestamp": "2021-04-14T23:21:45.891Z"
                 }
               },
               "accessTier": "Hot",
               "azureFilesIdentityBasedAuthentication": {
                 "directoryServiceOptions": "None",
                 "activeDirectoryProperties": {
-                  "domainName": "aaaaaaaaaaaa",
-                  "netBiosDomainName": "aa",
-                  "forestName": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "domainGuid": "aaaaaaaaaaaaaaaaa",
-                  "domainSid": "aaaaaaaaaaaaaaaaa",
-                  "azureStorageSid": "aaa"
+                  "domainName": "aaa",
+                  "netBiosDomainName": "aaaaaaaaaaaaaaaaaaaaa",
+                  "forestName": "aaaaaaaa",
+                  "domainGuid": "aaaaaaaaaaaaaaaa",
+                  "domainSid": "aaaaaaaaaaaaaaaaaaaaa",
+                  "azureStorageSid": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                 }
               },
               "networkAcls": {
                 "bypass": "None",
                 "resourceAccessRules": [
                   {
-                    "tenantId": "aaaaaaaaaaaaaaaaaaa",
-                    "resourceId": "aaaaaaaaaaaaaa"
+                    "tenantId": "aaaaaaaaaaaaaaaaaaaaaaaa",
+                    "resourceId": "aaaaaaaaaaaaaaaaaa"
                   }
                 ],
                 "virtualNetworkRules": [
                   {
-                    "id": "aaaaaaaa",
+                    "id": "aaaaaaaaaaaaaaaaaaaaa",
                     "action": "Allow",
                     "state": "provisioning"
                   }
                 ],
                 "ipRules": [
                   {
-                    "value": "aaaaaaaaaaaaaaa",
+                    "value": "aaaaa",
                     "action": "Allow"
                   }
                 ],
@@ -909,7 +909,7 @@
               "isHnsEnabled": true,
               "geoReplicationStats": {
                 "status": "Live",
-                "lastSyncTime": "2021-04-14T23:12:11.752Z",
+                "lastSyncTime": "2021-04-14T23:21:45.892Z",
                 "canFailover": true
               },
               "failoverInProgress": true,
@@ -922,14 +922,14 @@
                     },
                     "privateLinkServiceConnectionState": {
                       "status": "Pending",
-                      "description": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                      "actionRequired": "aaaaaaaaaaaaaaaaaa"
+                      "description": "aa",
+                      "actionRequired": "aaa"
                     },
                     "provisioningState": "Succeeded"
                   },
-                  "id": "aaaaaaaaaaaaaaa",
-                  "name": "aaaaaaaaaaaaa",
-                  "type": "aaaaaaaaaaa"
+                  "id": "aaaaaaaaaaaaaa",
+                  "name": "aaaaaaaaaaaaaaaaaa",
+                  "type": "aaaaaaaaaaaaaaaaaaaa"
                 }
               ],
               "routingPreference": {
@@ -939,14 +939,14 @@
               },
               "blobRestoreStatus": {
                 "status": "InProgress",
-                "failureReason": "aaaaaaaaaaaaaaaaaaaaaaa",
-                "restoreId": "aaaaa",
+                "failureReason": "aaaaaaaa",
+                "restoreId": "aaaaaaaaaa",
                 "parameters": {
-                  "timeToRestore": "2021-04-14T23:12:11.752Z",
+                  "timeToRestore": "2021-04-14T23:21:45.892Z",
                   "blobRanges": [
                     {
-                      "startRange": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                      "endRange": "aaaaaaaaaa"
+                      "startRange": "aaaaaa",
+                      "endRange": "aaaaaaaaaaaaaaaaaaaaa"
                     }
                   ]
                 }
@@ -962,12 +962,12 @@
             "tags": {},
             "type": "Microsoft.Storage/storageAccounts",
             "identity": {
-              "principalId": "a",
-              "tenantId": "aaaaa",
+              "principalId": "aaaaaaaaaaaaaaaaaaaaaaaaa",
+              "tenantId": "aaaaaaaa",
               "type": "SystemAssigned"
             },
             "extendedLocation": {
-              "name": "aaaaaaaaaaaaa",
+              "name": "aaa",
               "type": "EdgeZone"
             }
           },
@@ -988,21 +988,21 @@
                 "file": "https://sto9174.file.core.windows.net/",
                 "queue": "https://sto9174.queue.core.windows.net/",
                 "table": "https://sto9174.table.core.windows.net/",
-                "web": "aaaaaa",
-                "dfs": "aaaaaaaaaaaaaaaaaaaa",
+                "web": "aaaaaaaaaaaaaaaaaaaaa",
+                "dfs": "aaaaaaaa",
                 "microsoftEndpoints": {
-                  "blob": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "queue": "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "table": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "file": "aaaaaaaaaaaaaa",
-                  "web": "aaaaaa",
-                  "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                  "blob": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
+                  "queue": "aaaaaaaaaaaaaaaaaaa",
+                  "table": "aaaaaaaaaaaaaaaaaaa",
+                  "file": "aaaaaa",
+                  "web": "a",
+                  "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaaa"
                 },
                 "internetEndpoints": {
-                  "blob": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "file": "aaaaaaaaaaaaaaaaaaaa",
-                  "web": "aaa",
-                  "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaa"
+                  "blob": "aaaaaaaaaaaaaa",
+                  "file": "aaaaaaaaaaaaaaaaaaaaaaaa",
+                  "web": "aaaaaa",
+                  "dfs": "aaaaa"
                 }
               },
               "primaryLocation": "eastus",
@@ -1011,96 +1011,96 @@
               "statusOfPrimary": "available",
               "statusOfSecondary": "available",
               "supportsHttpsTrafficOnly": true,
-              "lastGeoFailoverTime": "2021-04-14T23:12:11.759Z",
+              "lastGeoFailoverTime": "2021-04-14T23:21:45.903Z",
               "customDomain": {
-                "name": "aaaaaaaaa",
+                "name": "aaaaaaaaaaaaaaaaa",
                 "useSubDomainName": true
               },
               "secondaryEndpoints": {
-                "blob": "aaaaaaaaaa",
-                "queue": "aaaaaaaaaaaaaaaa",
+                "blob": "aaaaaaaaaaaaaaaaaaa",
+                "queue": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "table": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "file": "aaaaaaaaaaaa",
-                "web": "aaaaaaaaaaa",
-                "dfs": "aaaaaaaaaaaaaa",
+                "file": "aaaaaaaaaa",
+                "web": "aaaaaaaaaaaaaaaa",
+                "dfs": "aaaaaaa",
                 "microsoftEndpoints": {
-                  "blob": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "queue": "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "table": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "file": "aaaaaaaaaaaaaa",
-                  "web": "aaaaaa",
-                  "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                  "blob": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
+                  "queue": "aaaaaaaaaaaaaaaaaaa",
+                  "table": "aaaaaaaaaaaaaaaaaaa",
+                  "file": "aaaaaa",
+                  "web": "a",
+                  "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaaa"
                 },
                 "internetEndpoints": {
-                  "blob": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "file": "aaaaaaaaaaaaaaaaaaaa",
-                  "web": "aaa",
-                  "dfs": "aaaaaaaaaaaaaaaaaaaaaaaaa"
+                  "blob": "aaaaaaaaaaaaaa",
+                  "file": "aaaaaaaaaaaaaaaaaaaaaaaa",
+                  "web": "aaaaaa",
+                  "dfs": "aaaaa"
                 }
               },
               "encryption": {
                 "services": {
                   "blob": {
                     "enabled": true,
-                    "lastEnabledTime": "2021-04-14T23:12:11.751Z",
+                    "lastEnabledTime": "2021-04-14T23:21:45.890Z",
                     "keyType": "Service"
                   },
                   "file": {
                     "enabled": true,
-                    "lastEnabledTime": "2021-04-14T23:12:11.751Z",
+                    "lastEnabledTime": "2021-04-14T23:21:45.890Z",
                     "keyType": "Service"
                   },
                   "table": {
                     "enabled": true,
-                    "lastEnabledTime": "2021-04-14T23:12:11.751Z",
+                    "lastEnabledTime": "2021-04-14T23:21:45.890Z",
                     "keyType": "Service"
                   },
                   "queue": {
                     "enabled": true,
-                    "lastEnabledTime": "2021-04-14T23:12:11.751Z",
+                    "lastEnabledTime": "2021-04-14T23:21:45.890Z",
                     "keyType": "Service"
                   }
                 },
                 "keySource": "Microsoft.Storage",
                 "requireInfrastructureEncryption": true,
                 "keyvaultproperties": {
-                  "keyname": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "keyversion": "aaaaaaaaaaa",
-                  "keyvaulturi": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "currentVersionedKeyIdentifier": "aaaaaaaaaaaaaaaaaaaa",
-                  "lastKeyRotationTimestamp": "2021-04-14T23:12:11.751Z"
+                  "keyname": "aaaaaaaaaa",
+                  "keyversion": "aa",
+                  "keyvaulturi": "aaaaaaaaaaaa",
+                  "currentVersionedKeyIdentifier": "aaaaaaaaaaa",
+                  "lastKeyRotationTimestamp": "2021-04-14T23:21:45.891Z"
                 }
               },
               "accessTier": "Hot",
               "azureFilesIdentityBasedAuthentication": {
                 "directoryServiceOptions": "None",
                 "activeDirectoryProperties": {
-                  "domainName": "aaaaaaaaaaaa",
-                  "netBiosDomainName": "aa",
-                  "forestName": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
-                  "domainGuid": "aaaaaaaaaaaaaaaaa",
-                  "domainSid": "aaaaaaaaaaaaaaaaa",
-                  "azureStorageSid": "aaa"
+                  "domainName": "aaa",
+                  "netBiosDomainName": "aaaaaaaaaaaaaaaaaaaaa",
+                  "forestName": "aaaaaaaa",
+                  "domainGuid": "aaaaaaaaaaaaaaaa",
+                  "domainSid": "aaaaaaaaaaaaaaaaaaaaa",
+                  "azureStorageSid": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                 }
               },
               "networkAcls": {
                 "bypass": "None",
                 "resourceAccessRules": [
                   {
-                    "tenantId": "aaaaaaaaaaaaaaaaaaa",
-                    "resourceId": "aaaaaaaaaaaaaa"
+                    "tenantId": "aaaaaaaaaaaaaaaaaaaaaaaa",
+                    "resourceId": "aaaaaaaaaaaaaaaaaa"
                   }
                 ],
                 "virtualNetworkRules": [
                   {
-                    "id": "aaaaaaaa",
+                    "id": "aaaaaaaaaaaaaaaaaaaaa",
                     "action": "Allow",
                     "state": "provisioning"
                   }
                 ],
                 "ipRules": [
                   {
-                    "value": "aaaaaaaaaaaaaaa",
+                    "value": "aaaaa",
                     "action": "Allow"
                   }
                 ],
@@ -1109,7 +1109,7 @@
               "isHnsEnabled": true,
               "geoReplicationStats": {
                 "status": "Live",
-                "lastSyncTime": "2021-04-14T23:12:11.752Z",
+                "lastSyncTime": "2021-04-14T23:21:45.892Z",
                 "canFailover": true
               },
               "failoverInProgress": true,
@@ -1122,14 +1122,14 @@
                     },
                     "privateLinkServiceConnectionState": {
                       "status": "Pending",
-                      "description": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                      "actionRequired": "aaaaaaaaaaaaaaaaaa"
+                      "description": "aa",
+                      "actionRequired": "aaa"
                     },
                     "provisioningState": "Succeeded"
                   },
-                  "id": "aaaaaaaaaaaaaaa",
-                  "name": "aaaaaaaaaaaaa",
-                  "type": "aaaaaaaaaaa"
+                  "id": "aaaaaaaaaaaaaa",
+                  "name": "aaaaaaaaaaaaaaaaaa",
+                  "type": "aaaaaaaaaaaaaaaaaaaa"
                 }
               ],
               "routingPreference": {
@@ -1139,14 +1139,14 @@
               },
               "blobRestoreStatus": {
                 "status": "InProgress",
-                "failureReason": "aaaaaaaaaaaaaaaaaaaaaaa",
-                "restoreId": "aaaaa",
+                "failureReason": "aaaaaaaa",
+                "restoreId": "aaaaaaaaaa",
                 "parameters": {
-                  "timeToRestore": "2021-04-14T23:12:11.752Z",
+                  "timeToRestore": "2021-04-14T23:21:45.892Z",
                   "blobRanges": [
                     {
-                      "startRange": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                      "endRange": "aaaaaaaaaa"
+                      "startRange": "aaaaaa",
+                      "endRange": "aaaaaaaaaaaaaaaaaaaaa"
                     }
                   ]
                 }
@@ -1162,12 +1162,12 @@
             "tags": {},
             "type": "Microsoft.Storage/storageAccounts",
             "extendedLocation": {
-              "name": "aaaaaaaaaaaaa",
+              "name": "aaa",
               "type": "EdgeZone"
             }
           }
         ],
-        "nextLink": "aaaaaaaaaaaa"
+        "nextLink": "aaaaaaa"
       }
     }
   }
