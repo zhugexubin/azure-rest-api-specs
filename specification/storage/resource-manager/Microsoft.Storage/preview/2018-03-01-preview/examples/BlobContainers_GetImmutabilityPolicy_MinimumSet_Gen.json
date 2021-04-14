@@ -1,0 +1,19 @@
+{
+  "parameters": {
+    "resourceGroupName": "rgblob",
+    "accountName": "sto1590",
+    "containerName": "container6185",
+    "immutabilityPolicyName": "default",
+    "api-version": "2018-03-01-preview",
+    "subscriptionId": "{subscription-id}"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "immutabilityPeriodSinceCreationInDays": 3
+        }
+      }
+    }
+  }
+}

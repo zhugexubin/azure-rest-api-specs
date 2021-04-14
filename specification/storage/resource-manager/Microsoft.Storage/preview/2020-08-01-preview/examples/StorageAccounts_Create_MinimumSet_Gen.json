@@ -1,0 +1,27 @@
+{
+  "parameters": {
+    "resourceGroupName": "rgstorage",
+    "accountName": "sto4445",
+    "parameters": {
+      "sku": {
+        "name": "Standard_GRS"
+      },
+      "kind": "Storage",
+      "location": "eastus"
+    },
+    "api-version": "2020-08-01-preview",
+    "subscriptionId": "{subscription-id}"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "location": "eastus"
+      }
+    },
+    "202": {
+      "headers": {
+        "location": "https://foo.com/operationstatus"
+      }
+    }
+  }
+}

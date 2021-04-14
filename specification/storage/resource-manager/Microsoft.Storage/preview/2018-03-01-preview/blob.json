@@ -25,6 +25,12 @@
         "x-ms-examples": {
           "ListContainers": {
             "$ref": "./examples/BlobContainersList.json"
+          },
+          "BlobContainers_List_MaximumSet_Gen": {
+            "$ref": "./examples/BlobContainers_List_MaximumSet_Gen.json"
+          },
+          "BlobContainers_List_MinimumSet_Gen": {
+            "$ref": "./examples/BlobContainers_List_MinimumSet_Gen.json"
           }
         },
         "description": "Lists all containers and does not support a prefix like data plane. Also SRP today does not return continuation token.",
@@ -61,6 +67,12 @@
         "x-ms-examples": {
           "PutContainers": {
             "$ref": "./examples/BlobContainersPut.json"
+          },
+          "BlobContainers_Create_MaximumSet_Gen": {
+            "$ref": "./examples/BlobContainers_Create_MaximumSet_Gen.json"
+          },
+          "BlobContainers_Create_MinimumSet_Gen": {
+            "$ref": "./examples/BlobContainers_Create_MinimumSet_Gen.json"
           }
         },
         "description": "Creates a new container under the specified account as described by request body. The container resource includes metadata and properties for that container. It does not include a list of the blobs contained by the container. ",
@@ -107,6 +119,12 @@
         "x-ms-examples": {
           "UpdateContainers": {
             "$ref": "./examples/BlobContainersPatch.json"
+          },
+          "BlobContainers_Update_MaximumSet_Gen": {
+            "$ref": "./examples/BlobContainers_Update_MaximumSet_Gen.json"
+          },
+          "BlobContainers_Update_MinimumSet_Gen": {
+            "$ref": "./examples/BlobContainers_Update_MinimumSet_Gen.json"
           }
         },
         "description": "Updates container properties as specified in request body. Properties not mentioned in the request will be unchanged. Update fails if the specified container doesn't already exist. ",
@@ -154,6 +172,12 @@
         "x-ms-examples": {
           "GetContainers": {
             "$ref": "./examples/BlobContainersGet.json"
+          },
+          "BlobContainers_Get_MaximumSet_Gen": {
+            "$ref": "./examples/BlobContainers_Get_MaximumSet_Gen.json"
+          },
+          "BlobContainers_Get_MinimumSet_Gen": {
+            "$ref": "./examples/BlobContainers_Get_MinimumSet_Gen.json"
           }
         },
         "description": "Gets properties of a specified container. ",
@@ -191,6 +215,12 @@
         "x-ms-examples": {
           "DeleteContainers": {
             "$ref": "./examples/BlobContainersDelete.json"
+          },
+          "BlobContainers_Delete_MaximumSet_Gen": {
+            "$ref": "./examples/BlobContainers_Delete_MaximumSet_Gen.json"
+          },
+          "BlobContainers_Delete_MinimumSet_Gen": {
+            "$ref": "./examples/BlobContainers_Delete_MinimumSet_Gen.json"
           }
         },
         "description": "Deletes specified container under its account.",
@@ -230,6 +260,12 @@
         "x-ms-examples": {
           "SetLegalHoldContainers": {
             "$ref": "./examples/BlobContainersSetLegalHold.json"
+          },
+          "BlobContainers_SetLegalHold_MaximumSet_Gen": {
+            "$ref": "./examples/BlobContainers_SetLegalHold_MaximumSet_Gen.json"
+          },
+          "BlobContainers_SetLegalHold_MinimumSet_Gen": {
+            "$ref": "./examples/BlobContainers_SetLegalHold_MinimumSet_Gen.json"
           }
         },
         "description": "Sets legal hold tags. Setting the same tag results in an idempotent operation. SetLegalHold follows an append pattern and does not clear out the existing tags that are not specified in the request.",
@@ -278,6 +314,12 @@
         "x-ms-examples": {
           "ClearLegalHoldContainers": {
             "$ref": "./examples/BlobContainersClearLegalHold.json"
+          },
+          "BlobContainers_ClearLegalHold_MaximumSet_Gen": {
+            "$ref": "./examples/BlobContainers_ClearLegalHold_MaximumSet_Gen.json"
+          },
+          "BlobContainers_ClearLegalHold_MinimumSet_Gen": {
+            "$ref": "./examples/BlobContainers_ClearLegalHold_MinimumSet_Gen.json"
           }
         },
         "description": "Clears legal hold tags. Clearing the same or non-existent tag results in an idempotent operation. ClearLegalHold clears out only the specified tags in the request.",
@@ -326,6 +368,12 @@
         "x-ms-examples": {
           "CreateOrUpdateImmutabilityPolicy": {
             "$ref": "./examples/BlobContainersPutImmutabilityPolicy.json"
+          },
+          "BlobContainers_CreateOrUpdateImmutabilityPolicy_MaximumSet_Gen": {
+            "$ref": "./examples/BlobContainers_CreateOrUpdateImmutabilityPolicy_MaximumSet_Gen.json"
+          },
+          "BlobContainers_CreateOrUpdateImmutabilityPolicy_MinimumSet_Gen": {
+            "$ref": "./examples/BlobContainers_CreateOrUpdateImmutabilityPolicy_MinimumSet_Gen.json"
           }
         },
         "description": "Creates or updates an unlocked immutability policy. ETag in If-Match is honored if given but not required for this operation.",
@@ -387,6 +435,12 @@
         "x-ms-examples": {
           "GetImmutabilityPolicy": {
             "$ref": "./examples/BlobContainersGetImmutabilityPolicy.json"
+          },
+          "BlobContainers_GetImmutabilityPolicy_MaximumSet_Gen": {
+            "$ref": "./examples/BlobContainers_GetImmutabilityPolicy_MaximumSet_Gen.json"
+          },
+          "BlobContainers_GetImmutabilityPolicy_MinimumSet_Gen": {
+            "$ref": "./examples/BlobContainers_GetImmutabilityPolicy_MinimumSet_Gen.json"
           }
         },
         "description": "Gets the existing immutability policy along with the corresponding ETag in response headers and body.",
@@ -440,6 +494,12 @@
         "x-ms-examples": {
           "DeleteImmutabilityPolicy": {
             "$ref": "./examples/BlobContainersDeleteImmutabilityPolicy.json"
+          },
+          "BlobContainers_DeleteImmutabilityPolicy_MaximumSet_Gen": {
+            "$ref": "./examples/BlobContainers_DeleteImmutabilityPolicy_MaximumSet_Gen.json"
+          },
+          "BlobContainers_DeleteImmutabilityPolicy_MinimumSet_Gen": {
+            "$ref": "./examples/BlobContainers_DeleteImmutabilityPolicy_MinimumSet_Gen.json"
           }
         },
         "description": "Aborts an unlocked immutability policy. The response of delete has immutabilityPeriodSinceCreationInDays set to 0. ETag in If-Match is required for this operation. Deleting a locked immutability policy is not allowed, only way is to delete the container after deleting all blobs inside the container.",
@@ -495,6 +555,12 @@
         "x-ms-examples": {
           "LockImmutabilityPolicy": {
             "$ref": "./examples/BlobContainersLockImmutabilityPolicy.json"
+          },
+          "BlobContainers_LockImmutabilityPolicy_MaximumSet_Gen": {
+            "$ref": "./examples/BlobContainers_LockImmutabilityPolicy_MaximumSet_Gen.json"
+          },
+          "BlobContainers_LockImmutabilityPolicy_MinimumSet_Gen": {
+            "$ref": "./examples/BlobContainers_LockImmutabilityPolicy_MinimumSet_Gen.json"
           }
         },
         "description": "Sets the ImmutabilityPolicy to Locked state. The only action allowed on a Locked policy is ExtendImmutabilityPolicy action. ETag in If-Match is required for this operation.",
@@ -547,6 +613,12 @@
         "x-ms-examples": {
           "ExtendImmutabilityPolicy": {
             "$ref": "./examples/BlobContainersExtendImmutabilityPolicy.json"
+          },
+          "BlobContainers_ExtendImmutabilityPolicy_MaximumSet_Gen": {
+            "$ref": "./examples/BlobContainers_ExtendImmutabilityPolicy_MaximumSet_Gen.json"
+          },
+          "BlobContainers_ExtendImmutabilityPolicy_MinimumSet_Gen": {
+            "$ref": "./examples/BlobContainers_ExtendImmutabilityPolicy_MinimumSet_Gen.json"
           }
         },
         "description": "Extends the immutabilityPeriodSinceCreationInDays of a locked immutabilityPolicy. The only action allowed on a Locked policy will be this action. ETag in If-Match is required for this operation.",
@@ -610,6 +682,12 @@
           },
           "Break a lease on a container": {
             "$ref": "./examples/BlobContainersLease_Break.json"
+          },
+          "BlobContainers_Lease_MaximumSet_Gen": {
+            "$ref": "./examples/BlobContainers_Lease_MaximumSet_Gen.json"
+          },
+          "BlobContainers_Lease_MinimumSet_Gen": {
+            "$ref": "./examples/BlobContainers_Lease_MinimumSet_Gen.json"
           }
         },
         "description": "The Lease Container operation establishes and manages a lock on a container for delete operations. The lock duration can be 15 to 60 seconds, or can be infinite.",

@@ -1,0 +1,287 @@
+{
+  "parameters": {
+    "resourceGroupName": "rgstorage",
+    "accountName": "sto4445",
+    "api-version": "2020-08-01-preview",
+    "subscriptionId": "{subscription-id}",
+    "managementPolicyName": "default",
+    "properties": {
+      "properties": {
+        "policy": {
+          "rules": [
+            {
+              "enabled": true,
+              "name": "olcmtest1",
+              "type": "Lifecycle",
+              "definition": {
+                "filters": {
+                  "blobTypes": [
+                    "blockBlob"
+                  ],
+                  "prefixMatch": [
+                    "olcmtestcontainer1"
+                  ],
+                  "blobIndexMatch": [
+                    {
+                      "name": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                      "op": "aaaaaaaa",
+                      "value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    }
+                  ]
+                },
+                "actions": {
+                  "baseBlob": {
+                    "tierToCool": {
+                      "daysAfterModificationGreaterThan": 30,
+                      "daysAfterLastAccessTimeGreaterThan": 0
+                    },
+                    "tierToArchive": {
+                      "daysAfterModificationGreaterThan": 90,
+                      "daysAfterLastAccessTimeGreaterThan": 0
+                    },
+                    "delete": {
+                      "daysAfterModificationGreaterThan": 1000,
+                      "daysAfterLastAccessTimeGreaterThan": 0
+                    },
+                    "enableAutoTierToHotFromCool": true
+                  },
+                  "snapshot": {
+                    "delete": {
+                      "daysAfterCreationGreaterThan": 30
+                    },
+                    "tierToCool": {
+                      "daysAfterCreationGreaterThan": 0
+                    },
+                    "tierToArchive": {
+                      "daysAfterCreationGreaterThan": 0
+                    }
+                  },
+                  "version": {
+                    "tierToCool": {
+                      "daysAfterCreationGreaterThan": 0
+                    },
+                    "tierToArchive": {
+                      "daysAfterCreationGreaterThan": 0
+                    },
+                    "delete": {
+                      "daysAfterCreationGreaterThan": 0
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "enabled": true,
+              "name": "olcmtest2",
+              "type": "Lifecycle",
+              "definition": {
+                "filters": {
+                  "blobTypes": [
+                    "blockBlob"
+                  ],
+                  "prefixMatch": [
+                    "olcmtestcontainer2"
+                  ],
+                  "blobIndexMatch": [
+                    {
+                      "name": "tag1",
+                      "op": "==",
+                      "value": "val1"
+                    },
+                    {
+                      "name": "tag2",
+                      "op": "==",
+                      "value": "val2"
+                    }
+                  ]
+                },
+                "actions": {
+                  "baseBlob": {
+                    "tierToCool": {
+                      "daysAfterModificationGreaterThan": 30,
+                      "daysAfterLastAccessTimeGreaterThan": 0
+                    },
+                    "tierToArchive": {
+                      "daysAfterModificationGreaterThan": 90,
+                      "daysAfterLastAccessTimeGreaterThan": 0
+                    },
+                    "delete": {
+                      "daysAfterModificationGreaterThan": 1000,
+                      "daysAfterLastAccessTimeGreaterThan": 0
+                    },
+                    "enableAutoTierToHotFromCool": true
+                  },
+                  "snapshot": {
+                    "tierToCool": {
+                      "daysAfterCreationGreaterThan": 0
+                    },
+                    "tierToArchive": {
+                      "daysAfterCreationGreaterThan": 0
+                    },
+                    "delete": {
+                      "daysAfterCreationGreaterThan": 0
+                    }
+                  },
+                  "version": {
+                    "tierToCool": {
+                      "daysAfterCreationGreaterThan": 0
+                    },
+                    "tierToArchive": {
+                      "daysAfterCreationGreaterThan": 0
+                    },
+                    "delete": {
+                      "daysAfterCreationGreaterThan": 0
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "policy": {
+            "rules": [
+              {
+                "enabled": true,
+                "name": "olcmtest1",
+                "type": "Lifecycle",
+                "definition": {
+                  "filters": {
+                    "blobTypes": [
+                      "blockBlob"
+                    ],
+                    "prefixMatch": [
+                      "olcmtestcontainer1"
+                    ],
+                    "blobIndexMatch": [
+                      {
+                        "name": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "op": "aaaaaaaa",
+                        "value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                      }
+                    ]
+                  },
+                  "actions": {
+                    "baseBlob": {
+                      "tierToCool": {
+                        "daysAfterModificationGreaterThan": 30,
+                        "daysAfterLastAccessTimeGreaterThan": 0
+                      },
+                      "tierToArchive": {
+                        "daysAfterModificationGreaterThan": 90,
+                        "daysAfterLastAccessTimeGreaterThan": 0
+                      },
+                      "delete": {
+                        "daysAfterModificationGreaterThan": 1000,
+                        "daysAfterLastAccessTimeGreaterThan": 0
+                      },
+                      "enableAutoTierToHotFromCool": true
+                    },
+                    "snapshot": {
+                      "delete": {
+                        "daysAfterCreationGreaterThan": 30
+                      },
+                      "tierToCool": {
+                        "daysAfterCreationGreaterThan": 0
+                      },
+                      "tierToArchive": {
+                        "daysAfterCreationGreaterThan": 0
+                      }
+                    },
+                    "version": {
+                      "tierToCool": {
+                        "daysAfterCreationGreaterThan": 0
+                      },
+                      "tierToArchive": {
+                        "daysAfterCreationGreaterThan": 0
+                      },
+                      "delete": {
+                        "daysAfterCreationGreaterThan": 0
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "enabled": true,
+                "name": "olcmtest2",
+                "type": "Lifecycle",
+                "definition": {
+                  "filters": {
+                    "blobTypes": [
+                      "blockBlob"
+                    ],
+                    "prefixMatch": [
+                      "olcmtestcontainer2"
+                    ],
+                    "blobIndexMatch": [
+                      {
+                        "name": "tag1",
+                        "op": "==",
+                        "value": "val1"
+                      },
+                      {
+                        "name": "tag2",
+                        "op": "==",
+                        "value": "val2"
+                      }
+                    ]
+                  },
+                  "actions": {
+                    "baseBlob": {
+                      "tierToCool": {
+                        "daysAfterModificationGreaterThan": 30,
+                        "daysAfterLastAccessTimeGreaterThan": 0
+                      },
+                      "tierToArchive": {
+                        "daysAfterModificationGreaterThan": 90,
+                        "daysAfterLastAccessTimeGreaterThan": 0
+                      },
+                      "delete": {
+                        "daysAfterModificationGreaterThan": 1000,
+                        "daysAfterLastAccessTimeGreaterThan": 0
+                      },
+                      "enableAutoTierToHotFromCool": true
+                    },
+                    "snapshot": {
+                      "tierToCool": {
+                        "daysAfterCreationGreaterThan": 0
+                      },
+                      "tierToArchive": {
+                        "daysAfterCreationGreaterThan": 0
+                      },
+                      "delete": {
+                        "daysAfterCreationGreaterThan": 0
+                      }
+                    },
+                    "version": {
+                      "tierToCool": {
+                        "daysAfterCreationGreaterThan": 0
+                      },
+                      "tierToArchive": {
+                        "daysAfterCreationGreaterThan": 0
+                      },
+                      "delete": {
+                        "daysAfterCreationGreaterThan": 0
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "lastModifiedTime": "2018-06-08T03:01:55.7168089Z"
+        },
+        "id": "/subscriptions/{subscription-id}/resourceGroups/res7231/providers/Microsoft.Storage/storageAccounts/sto288/managementPolicies/default",
+        "name": "DefaultManagementPolicy",
+        "type": "Microsoft.Storage/storageAccounts/managementPolicies"
+      }
+    }
+  }
+}

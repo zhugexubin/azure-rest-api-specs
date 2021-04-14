@@ -1,0 +1,78 @@
+{
+  "parameters": {
+    "resourceGroupName": "rgblob",
+    "accountName": "sto1590",
+    "containerName": "container6185",
+    "blobContainer": {
+      "properties": {
+        "publicAccess": "Container",
+        "metadata": {
+          "key9463": "aaaaaaaaaaaaaaaaa"
+        },
+        "immutabilityPolicy": {
+          "properties": {
+            "immutabilityPeriodSinceCreationInDays": 22
+          }
+        },
+        "legalHold": {
+          "tags": [
+            {}
+          ]
+        }
+      }
+    },
+    "api-version": "2018-03-01-preview",
+    "subscriptionId": "{subscription-id}"
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "properties": {
+          "publicAccess": "Container",
+          "lastModifiedTime": "2021-04-14T07:01:42.756Z",
+          "leaseStatus": "Locked",
+          "leaseState": "Available",
+          "leaseDuration": "Infinite",
+          "metadata": {
+            "key9463": "aaaaaaaaaaaaaaaaa"
+          },
+          "immutabilityPolicy": {
+            "properties": {
+              "immutabilityPeriodSinceCreationInDays": 22,
+              "state": "Locked"
+            },
+            "etag": "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "updateHistory": [
+              {
+                "update": "put",
+                "immutabilityPeriodSinceCreationInDays": 16,
+                "timestamp": "2021-04-14T07:01:42.755Z",
+                "objectIdentifier": "aaaaaaaaaaaaaa",
+                "tenantId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "upn": "aaaaaaaaaaaaaaaaaaaaaaaa"
+              }
+            ]
+          },
+          "legalHold": {
+            "hasLegalHold": true,
+            "tags": [
+              {
+                "tag": "aaaaaaaaaaaaaaaaaa",
+                "timestamp": "2021-04-14T07:01:42.755Z",
+                "objectIdentifier": "aaaaaaaaaaaaaaaaaaaaaaa",
+                "tenantId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "upn": "aaaaaaaaaaaaaaaaaaaaaaa"
+              }
+            ]
+          },
+          "hasLegalHold": true,
+          "hasImmutabilityPolicy": true
+        },
+        "etag": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "id": "/subscriptions/{subscription-id}/resourceGroups/res3376/providers/Microsoft.Storage/storageAccounts/sto328/blobServices/default/containers/container6185",
+        "name": "container6185",
+        "type": "Microsoft.Storage/storageAccounts/blobServices/containers"
+      }
+    }
+  }
+}

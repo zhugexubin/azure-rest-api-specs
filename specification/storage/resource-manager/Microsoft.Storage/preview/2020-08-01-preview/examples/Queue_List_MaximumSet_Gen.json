@@ -1,0 +1,35 @@
+{
+  "parameters": {
+    "resourceGroupName": "rgqueue",
+    "accountName": "sto1590",
+    "api-version": "2020-08-01-preview",
+    "subscriptionId": "{subscription-id}",
+    "$maxpagesize": "aaaaaaaaa",
+    "$filter": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "id": "/subscriptions/{subscription-id}/resourceGroups/res3376/providers/Microsoft.Storage/storageAccounts/sto328/queueServices/default/queues/queue6185",
+            "name": "queue6185",
+            "type": "Microsoft.Storage/storageAccounts/queueServices/queues",
+            "properties": {
+              "metadata": {}
+            }
+          },
+          {
+            "id": "/subscriptions/{subscription-id}/resourceGroups/res3376/providers/Microsoft.Storage/storageAccounts/sto328/queueServices/default/queues/queue6186",
+            "name": "queue6186",
+            "type": "Microsoft.Storage/storageAccounts/queueServices/queues",
+            "properties": {
+              "metadata": {}
+            }
+          }
+        ],
+        "nextLink": "https://sto1590endpoint/subscriptions/{subscription-id}/resourceGroups/res9290/providers/Microsoft.Storage/storageAccounts/sto328/queueServices/default/queues?api-version=2020-08-01-preview&$maxpagesize=2&$skipToken=/sto328/queue6187"
+      }
+    }
+  }
+}

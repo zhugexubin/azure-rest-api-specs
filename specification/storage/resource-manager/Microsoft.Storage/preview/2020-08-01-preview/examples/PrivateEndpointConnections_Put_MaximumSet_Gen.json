@@ -1,0 +1,39 @@
+{
+  "parameters": {
+    "resourceGroupName": "rgstorage",
+    "accountName": "sto4445",
+    "api-version": "2020-08-01-preview",
+    "subscriptionId": "{subscription-id}",
+    "privateEndpointConnectionName": "{privateEndpointConnectionName}",
+    "properties": {
+      "properties": {
+        "privateLinkServiceConnectionState": {
+          "status": "Approved",
+          "description": "aaa",
+          "actionRequired": "None"
+        },
+        "privateEndpoint": {}
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "privateLinkServiceConnectionState": {
+            "status": "Approved",
+            "description": "aaa",
+            "actionRequired": "None"
+          },
+          "privateEndpoint": {
+            "id": "/subscriptions/{subscription-id}/resourceGroups/res7231/providers/Microsoft.Network/privateEndpoints/petest01"
+          },
+          "provisioningState": "Succeeded"
+        },
+        "id": "/subscriptions/{subscription-id}/resourceGroups/res7231/providers/Microsoft.Storage/storageAccounts/sto288/privateEndpointConnections/{privateEndpointConnectionName}",
+        "name": "{privateEndpointConnectionName}",
+        "type": "Microsoft.Storage/storageAccounts/privateEndpointConnections"
+      }
+    }
+  }
+}

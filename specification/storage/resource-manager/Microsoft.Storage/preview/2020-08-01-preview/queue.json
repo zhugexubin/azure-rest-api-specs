@@ -25,6 +25,12 @@
         "x-ms-examples": {
           "QueueServicesList": {
             "$ref": "./examples/QueueServicesList.json"
+          },
+          "QueueServices_List_MaximumSet_Gen": {
+            "$ref": "./examples/QueueServices_List_MaximumSet_Gen.json"
+          },
+          "QueueServices_List_MinimumSet_Gen": {
+            "$ref": "./examples/QueueServices_List_MinimumSet_Gen.json"
           }
         },
         "description": "List all queue services for the storage account",
@@ -67,6 +73,12 @@
         "x-ms-examples": {
           "QueueServicesPut": {
             "$ref": "./examples/QueueServicesPut.json"
+          },
+          "QueueServices_SetServiceProperties_MaximumSet_Gen": {
+            "$ref": "./examples/QueueServices_SetServiceProperties_MaximumSet_Gen.json"
+          },
+          "QueueServices_SetServiceProperties_MinimumSet_Gen": {
+            "$ref": "./examples/QueueServices_SetServiceProperties_MinimumSet_Gen.json"
           }
         },
         "description": "Sets the properties of a storage account’s Queue service, including properties for Storage Analytics and CORS (Cross-Origin Resource Sharing) rules. ",
@@ -119,6 +131,12 @@
         "x-ms-examples": {
           "QueueServicesGet": {
             "$ref": "./examples/QueueServicesGet.json"
+          },
+          "QueueServices_GetServiceProperties_MaximumSet_Gen": {
+            "$ref": "./examples/QueueServices_GetServiceProperties_MaximumSet_Gen.json"
+          },
+          "QueueServices_GetServiceProperties_MinimumSet_Gen": {
+            "$ref": "./examples/QueueServices_GetServiceProperties_MinimumSet_Gen.json"
           }
         },
         "description": "Gets the properties of a storage account’s Queue service, including properties for Storage Analytics and CORS (Cross-Origin Resource Sharing) rules.",
@@ -167,6 +185,12 @@
           },
           "QueueOperationPutWithMetadata": {
             "$ref": "./examples/QueueOperationPutWithMetadata.json"
+          },
+          "Queue_Create_MaximumSet_Gen": {
+            "$ref": "./examples/Queue_Create_MaximumSet_Gen.json"
+          },
+          "Queue_Create_MinimumSet_Gen": {
+            "$ref": "./examples/Queue_Create_MinimumSet_Gen.json"
           }
         },
         "description": "Creates a new queue with the specified queue name, under the specified account.",
@@ -219,6 +243,12 @@
         "x-ms-examples": {
           "QueueOperationPatch": {
             "$ref": "./examples/QueueOperationPatch.json"
+          },
+          "Queue_Update_MaximumSet_Gen": {
+            "$ref": "./examples/Queue_Update_MaximumSet_Gen.json"
+          },
+          "Queue_Update_MinimumSet_Gen": {
+            "$ref": "./examples/Queue_Update_MinimumSet_Gen.json"
           }
         },
         "description": "Creates a new queue with the specified queue name, under the specified account.",
@@ -271,6 +301,12 @@
         "x-ms-examples": {
           "QueueOperationGet": {
             "$ref": "./examples/QueueOperationGet.json"
+          },
+          "Queue_Get_MaximumSet_Gen": {
+            "$ref": "./examples/Queue_Get_MaximumSet_Gen.json"
+          },
+          "Queue_Get_MinimumSet_Gen": {
+            "$ref": "./examples/Queue_Get_MinimumSet_Gen.json"
           }
         },
         "description": "Gets the queue with the specified queue name, under the specified account if it exists.",
@@ -314,6 +350,12 @@
         "x-ms-examples": {
           "QueueOperationDelete": {
             "$ref": "./examples/QueueOperationDelete.json"
+          },
+          "Queue_Delete_MaximumSet_Gen": {
+            "$ref": "./examples/Queue_Delete_MaximumSet_Gen.json"
+          },
+          "Queue_Delete_MinimumSet_Gen": {
+            "$ref": "./examples/Queue_Delete_MinimumSet_Gen.json"
           }
         },
         "description": "Deletes the queue with the specified queue name, under the specified account if it exists.",
@@ -356,6 +398,12 @@
         "x-ms-examples": {
           "QueueOperationList": {
             "$ref": "./examples/QueueOperationList.json"
+          },
+          "Queue_List_MaximumSet_Gen": {
+            "$ref": "./examples/Queue_List_MaximumSet_Gen.json"
+          },
+          "Queue_List_MinimumSet_Gen": {
+            "$ref": "./examples/Queue_List_MinimumSet_Gen.json"
           }
         },
         "description": "Gets a list of all the queues under the specified storage account",
