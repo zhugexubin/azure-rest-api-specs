@@ -7,17 +7,17 @@
     "subscriptionId": "{subscription-id}",
     "parameters": {
       "action": "Acquire",
-      "leaseId": "aaaaaaaaaa",
-      "breakPeriod": 7,
+      "leaseId": "aaaaaaaaaaaaaaaa",
+      "breakPeriod": 3,
       "leaseDuration": -1,
-      "proposedLeaseId": "aaaaa"
+      "proposedLeaseId": "aaaaaaaaaa"
     }
   },
   "responses": {
     "200": {
       "body": {
         "leaseId": "8698f513-fa75-44a1-b8eb-30ba336af27d",
-        "leaseTimeSeconds": "aa"
+        "leaseTimeSeconds": "aaaaaaaaaaaaaaaaaaaaaaaa"
       }
     }
   }
