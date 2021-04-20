@@ -7,14 +7,8 @@ Use `--python-mode=update` if you already have a setup.py and just want to updat
 ``` yaml $(python)
 python-mode: create
 python:
-  azure-arm: false
-  license-header: MICROSOFT_MIT_NO_VERSION
-  payload-flattening-threshold: 2
-  namespace: azure.containerregistry
-  package-name: azure-containerregistry
-  package-version: 0.1.0
-  clear-output-folder: true
-  add-credentials: true
+  input-file: https://raw.githubusercontent.com/Azure/azure-sdk-for-js/e40f55d5fa64d177c0267b52129c77aa353f95d8/sdk/containerregistry/container-registry/swagger/containerregistry.json
+  output-folder: "$(python-sdks-folder)/containerregistry/azure-containerregistry/azure/containerregistry/_generated"
 ```
 ``` yaml $(python) && $(python-mode) == 'update'
 python:
