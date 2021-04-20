@@ -77,8 +77,8 @@ cli:
             param: vmName
           alias: name
         - where:
-            group: "GalleryImages"
-            op: "Update"
+            group: "Galleries"
+            op: "CreateOrUpdate#Update"
           hidden: false
         - where:
             group: "GallerySharingProfile"
@@ -101,13 +101,14 @@ cli:
             op: "*"
             param: sharedTo
           alias: scope
+          hidden: false
 directive: 
   - where: 
       group: vm ssh-public-key
     set:
       group: sshkey
   - where:
-      group: vm gallery-image
+      group: vm gallery
     set:
       group: sig
   - where:
