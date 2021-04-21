@@ -48,7 +48,7 @@ directive:
 ```
 
 ``` yaml $(az) && $(target-mode) == "core"
-tag: package-2021-03-01
+tag: package-2020-12-01-only
 az:
   extensions: vm
   namespace: azure.mgmt.compute
@@ -76,63 +76,9 @@ cli:
             op: "*"
             param: vmName
           alias: name
-        - where:
-            group: "Galleries"
-            op: "Update"
-          delete: true
-        - where:
-            group: "Galleries"
-            op: "CreateOrUpdate#Create"
-          hidden: false
-        - where:
-            group: "Galleries"
-            op: "CreateOrUpdate#Update"
-          hidden: false
-        - where:
-            group: "GallerySharingProfile"
-            op: "Update"
-          hidden: false
-        - where:
-            group: "SharedGalleries"
-            op: "List"
-          hidden: false
-        - where:
-            group: "SharedGalleryImages"
-            op: "*"
-          hidden: false
-        - where:
-            group: "SharedGalleryImageVersions"
-            op: "*"
-          hidden: false
-        - where:
-            group: "*"
-            op: "*"
-            param: sharedTo
-          alias: scope
-          hidden: false
 directive: 
   - where: 
       group: vm ssh-public-key
     set:
       group: sshkey
-  - where:
-      group: vm gallery
-    set:
-      group: sig
-  - where:
-      command: vm shared-gallery list
-    set:
-      command: sig group-list
-  - where:
-      command: vm gallery-sharing-profile update
-    set:
-      command: sig share
-  - where: 
-      group: vm shared-gallery-image-version
-    set:
-      group: sig image-version
-  - where: 
-      group: vm shared-gallery-image
-    set:
-      group: sig image-definition
 ```
