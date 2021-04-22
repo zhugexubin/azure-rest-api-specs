@@ -43,13 +43,40 @@ cli:
        group: FindRestorableTimeRanges
       hidden: true
     - where:
-       type: AzureBackupRestoreRequest
-       prop: restoreTargetInfo
-      poly-resource: true
-    - where:
        group: BackupInstances
        op: TriggerRestore
        param: parameters
       poly-resource: true
-
+    # TriggerRestore#AzureBackupRecoveryTimeBasedRestoreRequest
+    - where:
+       group: BackupInstances
+       op: TriggerRestore#AzureBackupRecoveryTimeBasedRestoreRequest
+       param: parameters
+      cli-flatten: true
+    - where:
+       group: BackupInstances
+       op: TriggerRestore#AzureBackupRecoveryPointBasedRestoreRequest
+       param: parameters
+      cli-flatten: true
+    - where:
+       group: BackupInstances
+       op: TriggerRestore#AzureBackupRestoreWithRehydrationRequest
+       param: parameters
+      cli-flatten: true
+    - where:
+       group: BackupInstances
+       op: TriggerRestore#AzureBackupRecoveryTimeBasedRestoreRequest
+       param: restoreTargetInfo
+      poly-resource: true
+    # - where:
+    #    group: BackupInstances
+    #    op: TriggerRestore#AzureBackupRecoveryPointBasedRestoreRequest
+    #    param: restoreTargetInfo
+    #   poly-resource: true
+    - where:
+       group: BackupInstances
+       op: TriggerRestore#AzureBackupRestoreWithRehydrationRequest
+       param: restoreTargetInfo
+      poly-resource: true
+    # AzureBackupRecoveryPointBasedRestoreRequest
 ```
