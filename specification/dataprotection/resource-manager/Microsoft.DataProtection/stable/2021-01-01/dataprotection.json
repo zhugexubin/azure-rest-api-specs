@@ -4074,7 +4074,8 @@
       "properties": {
         "objectType": {
           "description": "Type of Datasource object, used to initialize the right inherited type",
-          "type": "string"
+          "type": "string",
+          "x-ms-client-name": "targetInfoType"
         },
         "recoveryOption": {
           "description": "Recovery Option",
