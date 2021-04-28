@@ -4,10 +4,10 @@
 
 This is the AutoRest configuration file for Batch.
 
-
-
 ---
+
 ## Getting Started
+
 To build the SDK for Batch, simply [Install AutoRest](https://aka.ms/autorest/install) and in this folder, run:
 
 > `autorest`
@@ -15,13 +15,13 @@ To build the SDK for Batch, simply [Install AutoRest](https://aka.ms/autorest/in
 To see additional help and options, run:
 
 > `autorest --help`
+
 ---
 
 ## Configuration
 
-
-
 ### Basic Information
+
 These are the global settings for the Batch API.
 
 ``` yaml
@@ -122,6 +122,7 @@ input-file:
 ## Suppression
 
 Note that this setting should be removed once [this GitHub bug](https://github.com/Azure/azure-openapi-validator/issues/68) is fixed.
+
 ``` yaml
 directive:
   - suppress: R2063
@@ -130,6 +131,7 @@ directive:
 ```
 
 Note that this setting should be removed once [this GitHub bug](https://github.com/Azure/azure-openapi-validator/issues/69) is fixed.
+
 ``` yaml
 directive:
   - suppress: R2064
@@ -223,6 +225,10 @@ directive:
     from: BatchService.json
     where: $.definitions.VirtualMachineConfiguration.properties.nodeAgentSKUId
     reason: The suggested casing of this property is worse than the casing that we're using
+  - suppress: DefinitionsPropertiesNamesCamelCase
+    where: $.definitions.ImageInformation.properties.nodeAgentSKUId
+    from: BatchService.json
+    reason: Changing the casing of this property would be a breaking change
 ```
 
 ### Tag: package-2017-05.5.0
@@ -233,7 +239,6 @@ These settings apply only when `--tag=package-2017-05.5.0` is specified on the c
 input-file:
 - Microsoft.Batch/stable/2017-05-01.5.0/BatchService.json
 ```
-
 
 ### Tag: package-2017-01.4.0
 
@@ -271,10 +276,9 @@ input-file:
 - Microsoft.Batch/stable/2015-12-01.2.2/BatchService.json
 ```
 
-
 ---
-# Code Generation
 
+# Code Generation
 
 ## Swagger to SDK
 
@@ -320,11 +324,13 @@ python:
   package-name: azure-batch
   clear-output-folder: true
 ```
+
 ``` yaml $(python) && $(python-mode) == 'update'
 python:
   no-namespace-folders: true
   output-folder: $(python-sdks-folder)/azure-batch/azure/batch
 ```
+
 ``` yaml $(python) && $(python-mode) == 'create'
 python:
   basic-setup-py: true
@@ -366,7 +372,7 @@ java:
   output-folder: $(azure-libraries-for-java-folder)/azure-batch
 ```
 
-## Multi-API/Profile support for AutoRest v3 generators 
+## Multi-API/Profile support for AutoRest v3 generators
 
 AutoRest V3 generators require the use of `--tag=all-api-versions` to select api files.
 
@@ -395,11 +401,10 @@ input-file:
 
 ```
 
-If there are files that should not be in the `all-api-versions` set, 
+If there are files that should not be in the `all-api-versions` set,
 uncomment the  `exclude-file` section below and add the file paths.
 
 ``` yaml $(tag) == 'all-api-versions'
 #exclude-file: 
 #  - $(this-folder)/Microsoft.Example/stable/2010-01-01/somefile.json
 ```
-
