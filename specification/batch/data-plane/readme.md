@@ -229,6 +229,10 @@ directive:
     where: $.definitions.ImageInformation.properties.nodeAgentSKUId
     from: BatchService.json
     reason: Changing the casing of this property would be a breaking change
+  - suppress: AvoidNestedProperties
+    where: $.definitions.NodeFile.properties.properties
+    from: BatchService.json
+    reason: Switching to x-ms-client-flatten would be a breaking change to the SDKs
 ```
 
 ### Tag: package-2017-05.5.0
