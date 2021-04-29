@@ -79,14 +79,6 @@ cli:
         - where:
             group: "Galleries"
             op: "Update"
-          delete: true
-        - where:
-            group: "Galleries"
-            op: "CreateOrUpdate#Create"
-          hidden: false
-        - where:
-            group: "Galleries"
-            op: "CreateOrUpdate#Update"
           hidden: false
         - where:
             group: "GallerySharingProfile"
@@ -124,15 +116,15 @@ directive:
     set:
       command: sig group-list
   - where:
-      command: vm gallery-sharing-profile update
+      group: vm gallery-sharing-profile
     set:
-      command: sig share
+      group: sig share
   - where: 
       group: vm shared-gallery-image-version
     set:
-      group: sig image-version
+      group: sig share image-version
   - where: 
       group: vm shared-gallery-image
     set:
-      group: sig image-definition
+      group: sig share image-definition
 ```
