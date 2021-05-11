@@ -1,38 +1,38 @@
 
-## trenton
+## terraform
 
-These settings apply only when `--trenton` is specified on the command line.
+These settings apply only when `--terraform` is specified on the command line.
 
-``` yaml $(trenton)
-trenton:
+``` yaml $(terraform)
+terraform:
     cli-name: operationalinsights
     package-name: operationalinsights
 clear-output-folder: true
-output-folder: $(trenton-output-folder)/operationalinsights
+output-folder: $(terraform-output-folder)/operationalinsights
 resources: Workspaces
 ```
 
-``` yaml $(tag) == 'package-2015-03' && $(trenton)
+``` yaml $(tag) == 'package-2015-03' && $(terraform)
 gosdk-folder: services/operationalinsights/mgmt/2015-03-20/operationalinsights
 ```
 
-``` yaml $(tag) == 'package-2015-11-preview' && $(trenton)
+``` yaml $(tag) == 'package-2015-11-preview' && $(terraform)
 gosdk-folder: services/preview/operationalinsights/mgmt/2015-11-01-preview/operationalinsights
 ```
 
-``` yaml $(tag) == 'package-2020-03-preview' && $(trenton)
+``` yaml $(tag) == 'package-2020-03-preview' && $(terraform)
 gosdk-folder: services/preview/operationalinsights/mgmt/2020-03-01-preview/operationalinsights
 ```
 
-``` yaml $(tag) == 'package-2020-10' && $(trenton)
+``` yaml $(tag) == 'package-2020-10' && $(terraform)
 gosdk-folder: services/operationalinsights/mgmt/2020-10-01/operationalinsights
 ```
 
-``` yaml $(tag) == 'package-2020-08' && $(trenton)
+``` yaml $(tag) == 'package-2020-08' && $(terraform)
 gosdk-folder: services/operationalinsights/mgmt/2020-08-01/operationalinsights
 ```
 
-``` yaml $(trenton)
+``` yaml $(terraform)
 overrides:
   - where:
       property: /parameters/type
@@ -42,30 +42,6 @@ overrides:
       property: //type
     set:
       - Hidden: true
-  - where:
-      property: /parameters/properties/publicNetworkAccessForIngestion
-    set:
-      - EnumValues/0/GoEnumMemberName: Enabled
-      - EnumValues/1/GoEnumMemberName: Disabled
-      - DefaultValue: true
-  - where:
-      property: //properties/publicNetworkAccessForIngestion
-    set:
-      - EnumValues/0/GoEnumMemberName: Enabled
-      - EnumValues/1/GoEnumMemberName: Disabled
-      - DefaultValue: true
-  - where:
-      property: /parameters/properties/publicNetworkAccessForQuery
-    set:
-      - EnumValues/0/GoEnumMemberName: Enabled
-      - EnumValues/1/GoEnumMemberName: Disabled
-      - DefaultValue: true
-  - where:
-      property: //properties/publicNetworkAccessForQuery
-    set:
-      - EnumValues/0/GoEnumMemberName: Enabled
-      - EnumValues/1/GoEnumMemberName: Disabled
-      - DefaultValue: true
   - where:
       property: /parameters/properties/sku
     set:
