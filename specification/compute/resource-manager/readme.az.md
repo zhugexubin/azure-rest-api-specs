@@ -123,23 +123,19 @@ directive:
     set:
       group: sig
   - where:
-      command: vm shared-gallery list
+      group: vm shared-gallery
     set:
-      command: sig group-list
+      group: sig shared-gallery
   - where:
       group: vm gallery-sharing-profile
     set:
       group: sig share
-  - where:
-      command: vm shared-gallery show
-    set:
-      command: sig share show
   - where: 
       group: vm shared-gallery-image-version
     set:
-      group: sig share image-version
+      group: sig shared-image-version
   - where: 
       group: vm shared-gallery-image
     set:
-      group: sig share image-definition
+      group: sig shared-image-definition
 ```
