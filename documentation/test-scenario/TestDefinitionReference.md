@@ -152,7 +152,12 @@ step: Create_publicIPAddresses_pubipdns
 resourceName: publicIPAddresses_pubipdns
 exampleFile: ../examples/Create_publicIPAddresses_pubipdns_Generated.json
 operationId: PublicIPAddresses_CreateOrUpdate
+
+
+
 statusCode: 200
+outputVariables:
+  varA: /properties/name
 ```
 
 **Fields:**
@@ -167,3 +172,5 @@ statusCode: 200
   - **Default:** 200
   - Expected response code.
   - For LRO it must be 200 to indicate succeeded result, and must be 400 to indicate failed result.
+- **outputVariables**
+  - **Type:** Optional, Object

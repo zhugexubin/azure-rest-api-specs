@@ -138,3 +138,27 @@ For example, given the following arm template:
 ```
 
 If we have variable `userName` defined with `abc`, then we will have variable `nameResult` defined with value `prefix/abc` so that following steps in the test scenario could use variable `nameResult`.
+
+## Set variable value from rest step's response
+
+It's like the arm template output convention, but you could get variable from rest step's response. For example,
+
+```yaml
+step: SomeRequest
+exampleFile: some_example_file.json
+outputVariables:
+  nameResultA: /properties/nameA
+  nameResultB: /properties/nameB
+```
+
+With the rest api response:
+```json
+{
+  "properties": {
+    "nameA": "valA",
+    "nameB": "valB"
+  }
+}
+```
+
+This step will define variable `nameResultA` and `nameResultB` from the response with value `valA` and `valB`. If you want to transform the variable, you could leverage arm template to use the variables as parameter input, and convert with functions in arm template, then get the result from arm template output.
