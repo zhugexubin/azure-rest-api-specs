@@ -4176,7 +4176,6 @@
       "description": "The credential result response."
     },
     "CloudError": {
-      "x-ms-external": true,
       "properties": {
         "error": {
           "$ref": "#/definitions/CloudErrorBody",
@@ -4186,7 +4185,6 @@
       "description": "An error response from the Container service."
     },
     "CloudErrorBody": {
-      "x-ms-external": true,
       "properties": {
         "code": {
           "type": "string",
