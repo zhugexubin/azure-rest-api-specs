@@ -3,28 +3,24 @@
 These settings apply only when `--typescript` is specified on the command line.
 Please also specify `--typescript-sdks-folder=<path to root folder of your azure-sdk-for-js clone>`.
 
-```yaml $(typescript) && !$(profile)
+```yaml $(typescript)
 typescript:
   azure-arm: true
   batch: true
   generate-metadata: true
 batch:
-  - package-resources: true
   - package-features: true
   - package-locks: true
-  - package-policy: true
-  - package-links: true
-  - package-managedapplications: true
 ```
 
-```yaml $(typescript) && $(package-features) && !$(profile)
+```yaml $(typescript) && $(package-features)
 typescript:
   package-name: "@azure/arm-features"
   output-folder: "$(typescript-sdks-folder)/sdk/features/arm-features"
   clear-output-folder: true
 ```
 
-```yaml $(typescript) && $(package-locks) && !$(profile)
+```yaml $(typescript) && $(package-locks)
 typescript:
   package-name: "@azure/arm-locks"
   output-folder: "$(typescript-sdks-folder)/sdk/locks/arm-locks"
