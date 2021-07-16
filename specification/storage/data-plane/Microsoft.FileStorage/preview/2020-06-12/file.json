@@ -2,7 +2,7 @@
     "swagger": "2.0",
     "info": {
         "title": "Azure File Storage",
-        "version": "2020-02-10",
+        "version": "2020-06-12",
         "x-ms-code-generation-settings": {
             "header": "MIT",
             "strictSpecAdherence": false
@@ -242,6 +242,12 @@
                     },
                     {
                         "$ref": "#/parameters/ApiVersionParameter"
+                    },
+                    {
+                        "$ref": "#/parameters/ShareEnabledProtocols"
+                    },
+                    {
+                        "$ref": "#/parameters/ShareRootSquash"
                     }
                 ],
                 "responses": {
@@ -426,6 +432,25 @@
                                 "x-ms-client-name": "AccessTierTransitionState",
                                 "type": "string",
                                 "description": "Returns the transition state betweeen access tiers, when present."
+                            },
+                            "x-ms-enabled-protocols": {
+                                "x-ms-client-name": "EnabledProtocols",
+                                "description": "The protocols that have been enabled on the share.",
+                                "type": "string"
+                            },
+                            "x-ms-root-squash": {
+                                "x-ms-client-name": "RootSquash",
+                                "description": "Valid for NFS shares only.",
+                                "type": "string",
+                                "enum": [
+                                    "NoRootSquash",
+                                    "RootSquash",
+                                    "AllSquash"
+                                ],
+                                "x-ms-enum": {
+                                    "name": "ShareRootSquash",
+                                    "modelAsString": false
+                                }
                             }
                         }
                     },
@@ -1344,6 +1369,9 @@
                     },
                     {
                         "$ref": "#/parameters/LeaseIdOptional"
+                    },
+                    {
+                        "$ref": "#/parameters/ShareRootSquash"
                     }
                 ],
                 "responses": {
@@ -2358,6 +2386,12 @@
                     },
                     {
                         "$ref": "#/parameters/ApiVersionParameter"
+                    },
+                    {
+                        "$ref": "#/parameters/ListFilesInclude"
+                    },
+                    {
+                        "$ref": "#/parameters/ListFilesExtendedInfo"
                     }
                 ],
                 "responses": {
@@ -4984,6 +5018,18 @@
             "properties": {
                 "Name": {
                     "type": "string"
+                },
+                "FileId": {
+                    "type": "string"
+                },
+                "Properties": {
+                    "$ref": "#/definitions/FileProperty"
+                },
+                "Attributes": {
+                    "type": "string"
+                },
+                "PermissionKey": {
+                    "type": "string"
                 }
             }
         },
@@ -5001,8 +5047,17 @@
                 "Name": {
                     "type": "string"
                 },
+                "FileId": {
+                    "type": "string"
+                },
                 "Properties": {
                     "$ref": "#/definitions/FileProperty"
+                },
+                "Attributes": {
+                    "type": "string"
+                },
+                "PermissionKey": {
+                    "type": "string"
                 }
             }
         },
@@ -5017,6 +5072,30 @@
                     "description": "Content length of the file. This value may not be up-to-date since an SMB client may have modified the file locally. The value of Content-Length may not reflect that fact until the handle is closed or the op-lock is broken. To retrieve current property values, call Get File Properties.",
                     "type": "integer",
                     "format": "int64"
+                },
+                "CreationTime": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "LastAccessTime": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "LastWriteTime": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "ChangeTime": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "Last-Modified": {
+                    "type": "string",
+                    "format": "date-time-rfc1123"
+                },
+                "Etag": {
+                    "type": "string",
+                    "format": "etag"
                 }
             }
         },
@@ -5229,7 +5308,7 @@
                 "ShareItems": {
                     "type": "array",
                     "items": {
-                        "$ref": "#/definitions/ShareItem"
+                        "$ref": "#/definitions/ShareItemInternal"
                     },
                     "xml": {
                         "name": "Shares",
@@ -5391,7 +5470,7 @@
                 }
             }
         },
-        "ShareItem": {
+        "ShareItemInternal": {
             "xml": {
                 "name": "Share"
             },
@@ -5415,14 +5494,14 @@
                     "type": "string"
                 },
                 "Properties": {
-                    "$ref": "#/definitions/ShareProperties"
+                    "$ref": "#/definitions/SharePropertiesInternal"
                 },
                 "Metadata": {
                     "$ref": "#/definitions/Metadata"
                 }
             }
         },
-        "ShareProperties": {
+        "SharePropertiesInternal": {
             "description": "Properties of a share.",
             "type": "object",
             "required": [
@@ -5480,6 +5559,12 @@
                 },
                 "LeaseDuration": {
                     "$ref": "#/definitions/LeaseDuration"
+                },
+                "EnabledProtocols": {
+                    "$ref": "#/definitions/ShareEnabledProtocols"
+                },
+                "RootSquash": {
+                    "$ref": "#/definitions/ShareRootSquash"
                 }
             }
         },
@@ -5580,6 +5665,21 @@
                     "description": "The permission in the Security Descriptor Definition Language (SDDL)."
                 }
             }
+        },
+        "ShareEnabledProtocols": {
+            "type": "string"
+        },
+        "ShareRootSquash": {
+            "type": "string",
+            "enum": [
+                "NoRootSquash",
+                "RootSquash",
+                "AllSquash"
+            ],
+            "x-ms-enum": {
+                "name": "ShareRootSquash",
+                "modelAsString": false
+            }
         }
     },
     "parameters": {
@@ -5609,7 +5709,7 @@
             "required": true,
             "type": "string",
             "enum": [
-              "2020-02-10"
+              "2020-06-12"
             ]
         },
         "ClientRequestId": {
@@ -5999,6 +6099,36 @@
             "x-ms-parameter-location": "method",
             "description": "Specifies the current lease ID on the resource."
         },
+        "ListFilesInclude": {
+            "name": "include",
+            "in": "query",
+            "description": "Include this parameter to specify one or more datasets to include in the response.",
+            "required": false,
+            "type": "array",
+            "collectionFormat": "csv",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "Timestamps",
+                    "Etag",
+                    "Attributes",
+                    "PermissionKey"
+                ],
+                "x-ms-enum": {
+                    "name": "ListFilesIncludeType",
+                    "modelAsString": false
+                }
+            },
+            "x-ms-parameter-location": "method"
+        },
+        "ListFilesExtendedInfo": {
+            "name": "x-ms-file-extended-info",
+            "x-ms-client-name": "includeExtendedInfo",
+            "x-ms-parameter-location": "method",
+            "in": "header",
+            "type": "boolean",
+            "required": false
+        },
         "ListSharesInclude": {
             "name": "include",
             "in": "query",
@@ -6225,6 +6355,33 @@
             "required": true,
             "schema": {
                 "$ref": "#/definitions/SharePermission"
+            },
+            "x-ms-parameter-location": "method"
+        },
+        "ShareEnabledProtocols": {
+            "name": "x-ms-enabled-protocols",
+            "description": "Protocols to enable on the share.",
+            "x-ms-client-name": "enabledProtocols",
+            "in": "header",
+            "required": false,
+            "type": "string",
+            "x-ms-parameter-location": "method"
+        },
+        "ShareRootSquash": {
+            "name": "x-ms-root-squash",
+            "description": "Root squash to set on the share.  Only valid for NFS shares.",
+            "x-ms-client-name": "rootSquash",
+            "in": "header",
+            "required": false,
+            "type": "string",
+            "enum": [
+                "NoRootSquash",
+                "RootSquash",
+                "AllSquash"
+            ],
+            "x-ms-enum": {
+                "name": "ShareRootSquash",
+                "modelAsString": false
             },
             "x-ms-parameter-location": "method"
         }

@@ -485,6 +485,11 @@
                   "modelAsString": false
                 },
                 "description": "Identifies the account kind"
+              },
+              "x-ms-is-hns-enabled": {
+                "x-ms-client-name": "IsHierarchicalNamespaceEnabled",
+                "type": "boolean",
+                "description": "Version 2019-07-07 and newer. Indicates if the account has a hierarchical namespace enabled."
               }
             }
           },
@@ -3139,6 +3144,11 @@
                 "type": "string",
                 "description": "A DateTime value returned by the service that uniquely identifies the blob. The value of this header indicates the blob version, and may be used in subsequent requests to access this version of the blob."
               },
+              "x-ms-is-current-version": {
+                "x-ms-client-name": "IsCurrentVersion",
+                "type": "boolean",
+                "description": "The value of this header indicates whether version of this blob is a current version, see also x-ms-version-id header."
+              },
               "Accept-Ranges": {
                 "type": "string",
                 "description": "Indicates that the service supports requests for partial blob content."
@@ -3383,6 +3393,16 @@
                 "x-ms-client-name": "Version",
                 "type": "string",
                 "description": "Indicates the version of the Blob service used to execute the request. This header is returned for requests made against version 2009-09-19 and above."
+              },
+              "x-ms-version-id": {
+                "x-ms-client-name": "VersionId",
+                "type": "string",
+                "description": "A DateTime value returned by the service that uniquely identifies the blob. The value of this header indicates the blob version, and may be used in subsequent requests to access this version of the blob."
+              },
+              "x-ms-is-current-version": {
+                "x-ms-client-name": "IsCurrentVersion",
+                "type": "boolean",
+                "description": "The value of this header indicates whether version of this blob is a current version, see also x-ms-version-id header."
               },
               "Accept-Ranges": {
                 "type": "string",
@@ -5972,7 +5992,7 @@
             "$ref": "#/parameters/SourceIfNoneMatch"
           },
           {
-            "$ref": "#/parameters/SourceIfTags"	
+            "$ref": "#/parameters/SourceIfTags"
           },
           {
             "$ref": "#/parameters/IfModifiedSince"
@@ -9888,7 +9908,8 @@
         },
         "Size": {
           "description": "The block size in bytes.",
-          "type": "integer"
+          "type": "integer",
+          "format": "int64"
         }
       }
     },
@@ -10032,47 +10053,40 @@
       "xml": {
         "name": "DelimitedTextConfiguration"
       },
-      "description": "delimited text configuration",
+      "description": "Groups the settings used for interpreting the blob data if the blob is delimited text formatted.",
       "type": "object",
-      "required": [
-        "ColumnSeparator",
-        "FieldQuote",
-        "RecordSeparator",
-        "EscapeChar",
-        "HeadersPresent"
-      ],
       "properties": {
         "ColumnSeparator": {
           "type": "string",
-          "description": "column separator",
+          "description": "The string used to separate columns.",
           "xml": {
             "name": "ColumnSeparator"
           }
         },
         "FieldQuote": {
           "type": "string",
-          "description": "field quote",
+          "description": "The string used to quote a specific field.",
           "xml": {
             "name": "FieldQuote"
           }
         },
         "RecordSeparator": {
           "type": "string",
-          "description": "record separator",
+          "description": "The string used to separate records.",
           "xml": {
             "name": "RecordSeparator"
           }
         },
         "EscapeChar": {
           "type": "string",
-          "description": "escape char",
+          "description": "The string used as an escape character.",
           "xml": {
             "name": "EscapeChar"
           }
         },
         "HeadersPresent": {
           "type": "boolean",
-          "description": "has headers",
+          "description": "Represents whether the data has headers.",
           "xml": {
             "name": "HasHeaders"
           }
@@ -10085,13 +10099,10 @@
       },
       "description": "json text configuration",
       "type": "object",
-      "required": [
-        "RecordSeparator"
-      ],
       "properties": {
         "RecordSeparator": {
           "type": "string",
-          "description": "record separator",
+          "description": "The string used to separate records.",
           "xml": {
             "name": "RecordSeparator"
           }
@@ -10102,7 +10113,7 @@
       "xml": {
         "name": "ArrowConfiguration"
       },
-      "description": "arrow configuration",
+      "description": "Groups the settings used for formatting the response if the response should be Arrow formatted.",
       "type": "object",
       "required": [
         "Schema"
@@ -10124,7 +10135,7 @@
       "xml": {
         "name": "Field"
       },
-      "description": "field of an arrow schema",
+      "description": "Groups settings regarding specific field of an arrow schema",
       "type": "object",
       "required": [
         "Type"
@@ -10271,6 +10282,7 @@
         "BlobNotFound",
         "BlobOverwritten",
         "BlobTierInadequateForContentLength",
+        "BlobUsesCustomerSpecifiedEncryption",
         "BlockCountExceedsLimit",
         "BlockListTooLong",
         "CannotChangeToLowerTier",
@@ -10589,7 +10601,7 @@
       }
     },
     "QueryRequest": {
-      "description": "the quick query body",
+      "description": "Groups the set of query request settings.",
       "type": "object",
       "required": [
         "QueryType",
@@ -10598,7 +10610,7 @@
       "properties": {
         "QueryType": {
           "type": "string",
-          "description": "the query type",
+          "description": "Required. The type of the provided query expression.",
           "xml": {
             "name": "QueryType"
           },
@@ -10608,7 +10620,7 @@
         },
         "Expression": {
           "type": "string",
-          "description": "a query statement",
+          "description": "The query expression in SQL. The maximum size of the query expression is 256KiB.",
           "xml": {
             "name": "Expression"
           }
@@ -10617,7 +10629,7 @@
           "$ref": "#/definitions/QuerySerialization",
           "xml": {
             "name": "InputSerialization"
-          }      
+          }
         },
         "OutputSerialization": {
           "$ref": "#/definitions/QuerySerialization",
@@ -10817,7 +10829,7 @@
   "parameters": {
     "Url": {
       "name": "url",
-      "description": "The URL of the service account, container, or blob that is the targe of the desired operation.",
+      "description": "The URL of the service account, container, or blob that is the target of the desired operation.",
       "required": true,
       "type": "string",
       "in": "path",
