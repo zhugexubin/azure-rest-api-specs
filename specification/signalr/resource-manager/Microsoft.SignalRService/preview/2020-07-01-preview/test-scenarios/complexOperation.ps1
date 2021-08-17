@@ -7,8 +7,7 @@
 # This script is used for downloading jar package from storage blob and upload to file share.
 $BlobUri = 'https://storagewrx.blob.core.windows.net/fixtures/echo-app-0.0.1-SNAPSHOT.jar'
 $storageAccountName = 'storagewrx'
-# $localFilePath = 'C:\Users\ruowan\work\scripts\a.jar'
-$localFilePath = '/mnt/azscripts/azscriptoutput/a.jar'
+$localFilePath = './helloWorld.jar'
 function DownloadJarFromBlob([string]$blobUri, [string]$storageAccountName, [string]$storageAccountKey, [string]$localOutputFilePath) {
 
 	$StorageCredentials = [Microsoft.WindowsAzure.Storage.Auth.StorageCredentials]::new($storageAccountName, $storageAccountKey)
@@ -30,7 +29,7 @@ function UploadToFileShare([string]$uploadUrl, [string]$localFilePath) {
 
 Connect-AzAccount -Identity
 # Set-AzContext 4e7b30e5-96b6-4d26-ae34-bd0b75fdafb4
-# Set-AzContext db5eb68e-73e2-4fa8-b18a-46cd1be4cce5
+Set-AzContext db5eb68e-73e2-4fa8-b18a-46cd1be4cce5
 $storageAccountKey = Get-AzKeyVaultSecret -VaultName 'ruowan-vault'  -Name 'storageAccountKey' -AsPlainText
 $uploadUrl = Get-AzKeyVaultSecret -VaultName "ruowan-vault" -Name "uploadUri" -AsPlainText
 DownloadJarFromBlob $BlobUri $storageAccountName $storageAccountKey $localFilePath
