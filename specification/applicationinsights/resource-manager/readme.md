@@ -28,7 +28,7 @@ These are the global settings for the ApplicationInsights API.
 title: ApplicationInsightsManagementClient
 description: Composite Swagger for Application Insights Management Client
 openapi-type: arm
-tag: package-2020-11-only
+tag: package-2021-08-25
 ```
 
 ### Suppression
@@ -228,8 +228,8 @@ These settings apply only when `--tag=package-2021-08-25` is specified on the co
 
 ``` yaml $(tag) == 'package-2021-08-25'
 input-file:
-  - Microsoft.Insights/stable/2021-03-08/workbooks_API.json
-  - Microsoft.Insights/stable/2021-03-08/workbookOperations_API.json
+  - Microsoft.Insights/stable/2021-08-25/workbooks_API.json
+  - Microsoft.Insights/stable/2021-08-25/workbookOperations_API.json
 ```
 
 ### Tag: package-2021-03-only
@@ -402,6 +402,7 @@ These settings apply only when `--tag=package-2018-06-17-preview` is specified o
 ``` yaml $(tag) == 'package-2018-06-17-preview'
 input-file:
 - Microsoft.Insights/preview/2018-06-17-preview/workbooks_API.json
+- Microsoft.Insights/preview/2018-06-17-preview/workbookOperations_API.json
 ```
 
 ### Tag: package-2018-05-01-preview
